@@ -1,92 +1,174 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset and Body */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Wrapper and Container */
 .wrapper {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
     padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-header, footer {
+/* Header */
+header {
     width: 100%;
-    text-align: center;
-    margin: 20px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
+/* Left Section Styling */
 .left-section {
     flex: 1 1 30%;
     text-align: center;
+    padding: 15px;
+    background-color: #e8f0fe;
+    border-radius: 8px;
 }
 
 .profile-photo-circle {
-    width: 100%;
-    max-width: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    border: 2px solid #3a5a9f;
+    margin-bottom: 15px;
 }
 
-.right-section {
-    flex: 1 1 65%;
+.left-section h1 {
+    font-size: 1.8em;
+    color: #2d3e50;
+    margin-bottom: 5px;
 }
 
-h1 {
-    font-size: 2em;
-    color: #333;
-    margin: 0;
-}
-
-h2 {
-    font-size: 1.5em;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-p {
-    line-height: 1.5;
-    color: #555;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
+.left-section p {
+    font-size: 0.95em;
+    color: #506080;
 }
 
 .contact-icons img {
     width: 24px;
     height: 24px;
     margin: 0 5px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.contact-icons img:hover {
+    opacity: 1;
+}
+
+/* Right Section Styling */
+.right-section {
+    flex: 1 1 65%;
+    padding: 15px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 25px;
+    text-align: right;
 }
 
 nav a {
+    color: #3a5a9f;
+    font-size: 1em;
     margin: 0 10px;
-    color: #007bff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
+nav a:hover {
+    color: #1a3467;
+}
+
+/* Section Headers */
+h2 {
+    font-size: 1.4em;
+    color: #3a5a9f;
+    border-bottom: 2px solid #3a5a9f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* About Section */
+#about p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #3a5a9f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2d3e50;
+}
+
+/* Research Interests */
+#research-interests ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#research-interests li {
+    padding: 5px 0;
+    color: #4a4a4a;
+}
+
+#research-interests li strong {
+    color: #3a5a9f;
+}
+
+/* Skills */
 .skills-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
 .skill-item {
     padding: 10px;
-    background-color: #e9ecef;
+    background-color: #f0f4fb;
+    border-left: 4px solid #3a5a9f;
     border-radius: 5px;
+    color: #333;
+    font-size: 0.95em;
 }
 
-footer p {
+/* Footer */
+footer {
+    padding: 10px 0;
+    background-color: #e8f0fe;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    color: #506080;
     font-size: 0.9em;
-    color: #999;
 }
