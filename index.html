@@ -8,23 +8,13 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Srivathsan Badrinarayanan</h1>
-            <p>AI Engineer | Data Scientist | Researcher</p>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="blog.html">Blog</a>
-            </nav>
-        </div>
-    </header>
-
-    <section id="main-content">
-        <div class="container">
-            <div class="sidebar" style="width: 30%;">
-                <img src="image.jpg" alt="Photo of Srivathsan" class="profile-photo-circle">
-                <div class="contact-info">
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="left-section" style="width: 30%; float: left;">
+                    <img src="image.jpg" alt="Photo of Srivathsan" class="profile-photo-circle" style="border-radius: 50%; width: 100%;">
+                    <h1>Srivathsan Badrinarayanan</h1>
+                    <p>AI Engineer | Data Scientist | Researcher</p>
                     <p>Master's Student - AI Engineering + Chemical Engineering</p>
                     <p>Carnegie Mellon University</p>
                     <p><a href="mailto:srivathsanb14@gmail.com">srivathsanb14@gmail.com</a></p>
@@ -34,41 +24,49 @@
                         <a href="https://github.com/srivathsanb14" target="_blank"><img src="github-icon.png" alt="GitHub Icon"></a>
                     </div>
                 </div>
+
+                <div class="right-section" style="width: 65%; float: right;">
+                    <nav style="margin-top: 20px;">
+                        <a href="index.html">Home</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="blog.html">Blog</a>
+                    </nav>
+
+                    <section id="about">
+                        <h2>About Me</h2>
+                        <p>I am an AI engineer with expertise in machine learning and data science, focusing on real-world challenges across chemical engineering, science, and related domains. With a deep understanding of deep learning and computational models, I aim to develop impactful AI solutions that integrate domain-specific knowledge.</p>
+                        <a href="https://github.com/srivathsanb14/srivathsanb14.github.io/blob/main/Srivathsan_Badrinarayanan_Resume.pdf" class="btn" target="_blank">Explore My Detailed Career Overview</a>
+                    </section>
+
+                    <section id="research-interests">
+                        <h2>Research Interests</h2>
+                        <p>My research interests center on Generative AI and AI4Science. My work spans across two main categories:</p>
+                        <ul>
+                            <li><strong>AI for Science:</strong> Multimodal Transformers and GNNs for Proteins, Generative Language Models and Multimodal predictive models for catalysts</li>
+                            <li><strong>Generative AI/LLMs:</strong> LLMs and text-to-speech for audiform creation, automated pipelines for creating powerpoints from PDFs</li>
+                        </ul>
+                    </section>
+
+                    <section id="skills">
+                        <h2>Skills</h2>
+                        <div class="skills-list">
+                            <div class="skill-item"><strong>Machine Learning:</strong> Supervised, unsupervised learning, and predictive modeling</div>
+                            <div class="skill-item"><strong>Generative AI:</strong> Transformer models, LLMs for real-world applications</div>
+                            <div class="skill-item"><strong>Data Science & Analytics:</strong> Python, R, SQL for data wrangling, visualization, and evaluation</div>
+                            <div class="skill-item"><strong>Deep Learning:</strong> CNNs, RNNs, GNNs for images, sequences, and graphs</div>
+                            <div class="skill-item"><strong>Tools & Frameworks:</strong> PyTorch, TensorFlow, HuggingFace, AWS, Docker</div>
+                        </div>
+                    </section>
+                </div>
+                <div style="clear: both;"></div>
             </div>
-            <div class="main-right" style="width: 70%;">
-                <section id="about">
-                    <h2>About Me</h2>
-                    <p>I am an AI engineer with expertise in machine learning and data science, focusing on real-world challenges across chemical engineering, science, and related domains. With a deep understanding of deep learning and computational models, I aim to develop impactful AI solutions that integrate domain-specific knowledge.</p>
-                    <a href="https://github.com/srivathsanb14/srivathsanb14.github.io/blob/main/Srivathsan_Badrinarayanan_Resume.pdf" class="btn" target="_blank">Explore My Detailed Career Overview</a>
-                </section>
+        </header>
 
-                <section id="research-interests">
-                    <h2>Research Interests</h2>
-                    <p>My research interests center on Generative AI and AI4Science. My work spans across two main categories:</p>
-                    <ul>
-                        <li><strong>AI for Science:</strong> Multimodal Transformers and GNNs for Proteins, Generative Language Models and Multimodal predictive models for catalysts</li>
-                        <li><strong>Generative AI/LLMs:</strong> LLMs and text-to-speech for audiform creation, automated pipelines for creating powerpoints from PDFs</li>
-                    </ul>
-                </section>
-
-                <section id="skills">
-                    <h2>Skills</h2>
-                    <div class="skills-list">
-                        <div class="skill-item"><strong>Machine Learning:</strong> Supervised, unsupervised learning, and predictive modeling</div>
-                        <div class="skill-item"><strong>Generative AI:</strong> Transformer models, LLMs for real-world applications</div>
-                        <div class="skill-item"><strong>Data Science & Analytics:</strong> Python, R, SQL for data wrangling, visualization, and evaluation</div>
-                        <div class="skill-item"><strong>Deep Learning:</strong> CNNs, RNNs, GNNs for images, sequences, and graphs</div>
-                        <div class="skill-item"><strong>Tools & Frameworks:</strong> PyTorch, TensorFlow, HuggingFace, AWS, Docker</div>
-                    </div>
-                </section>
+        <footer>
+            <div class="container">
+                <p>© 2024 Srivathsan Badrinarayanan</p>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2024 Srivathsan Badrinarayanan</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
