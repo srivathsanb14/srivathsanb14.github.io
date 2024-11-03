@@ -5,53 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Srivathsan Badrinarayanan</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2em;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5em;
+        }
+
+        /* Project category sections */
+        .project-category {
+            margin-top: 3em;
+            padding: 1em;
+            border-radius: 8px;
+        }
+
+        .ai4science { background-color: #f0f8ff; }
+        .generative-ai { background-color: #f9f0ff; }
+        .time-series { background-color: #f0fff0; }
+
+        .project-item {
+            margin: 1em 0;
+            padding: 1em;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-item h3 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+
+        .project-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-item p {
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Projects</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog.html">Blog</a>
-        </nav>
-    </header>
 
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <ul>
-            <li>
-                <h3><a href="https://github.com/srivathsanb14/MultiPeptide" target="_blank">Multi-Peptide: Multimodality Leveraged Language-Graph Learning of Peptide Properties</a></h3>
-                <p>Developed a multimodal deep learning model for peptide property prediction, combining sequence data and structural information with a contrastive learning framework. Achieved state-of-the-art results, contributing to a <a href="https://doi.org/10.48550/arXiv.2407.03380" target="_blank">publication on arXiv</a>.</p>
-            </li>
-            <li>
-                <h3><a href="https://github.com/srivathsanb14/thermo_package" target="_blank">THALA - Thermodynamics Helper and Analysis Library for Applications</a></h3>
-                <p>Developed and released a Python library for thermodynamic analysis, demonstrating expertise in project completion and version control. Available on <a href="https://github.com/srivathsanb14/thermo_package" target="_blank">GitHub</a>.</p>
-            </li>
-            <li>
-                <h3><a href="https://dreampodcasts.com" target="_blank">Generative AI Podcasts</a></h3>
-                <p>Led the development of a prompt-to-audioform generative AI pipeline using Large Language Models and Text-to-Speech, enhancing knowledge accessibility through <a href="https://dreampodcasts.com" target="_blank">DreamPods</a> and on <a href="https://spotify.com" target="_blank">@dreampods</a> on Spotify.</p>
-            </li>
-            <li>
-                <h3>Automated Lecture Video Creation</h3>
-                <p>Developed an automated ML pipeline to convert PDF content into lecture videos, reducing preparation time for educators by 50% and aiding in content creation for universities.</p>
-            </li>
-            <li>
-                <h3>Multimodal Language and Graph Learning of Adsorption Configuration in Catalysis</h3>
-                <p>Built a generative-predictive pipeline for precise adsorption energy predictions in catalyst systems, combining generative LLM and graph-based multimodal learning. Research accepted in <a href="https://doi.org/10.48550/arXiv.2401.07408" target="_blank">Nature Machine Intelligence</a>.</p>
-            </li>
-            <li>
-                <h3>Data-Driven Optimization of Refinery Process Operations</h3>
-                <p>Developed high-accuracy multivariate deep learning models for refinery processes, optimizing operations and boosting profitability. Delivered findings in a concise 3-minute presentation to over 50 scholars.</p>
-            </li>
-            <li>
-                <h3>Machine Learning Pipeline for Object Recognition</h3>
-                <p>Engineered a machine learning pipeline for accurate object recognition deployed on AWS Sagemaker, reducing service wait time by 50% through efficient appliance identification.</p>
-            </li>
-        </ul>
-    </section>
+<header>
+    <h1>Projects</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+</header>
 
-    <footer>
-        <p>© 2024 Srivathsan Badrinarayanan</p>
-    </footer>
+<section id="projects">
+    <h2>Featured Projects</h2>
+
+    <!-- AI4Science Projects -->
+    <div class="project-category ai4science">
+        <h3>AI4Science</h3>
+
+        <div class="project-item">
+            <h3><a href="https://github.com/srivathsanb14/MultiPeptide" target="_blank">Multi-Peptide: Multimodality Leveraged Language-Graph Learning of Peptide Properties</a></h3>
+            <p>Developed a multimodal deep learning model for peptide property prediction, combining sequence and structural data using contrastive learning. Achieved state-of-the-art results, leading to an <a href="https://doi.org/10.48550/arXiv.2407.03380" target="_blank">arXiv publication</a>.</p>
+        </div>
+
+        <div class="project-item">
+            <h3>Multimodal Language and Graph Learning of Adsorption Configuration in Catalysis</h3>
+            <p>Created a generative-predictive pipeline to predict adsorption energy for adsorbate-catalyst systems, combining LLMs and graph-based multimodal learning. Research accepted in <a href="https://doi.org/10.48550/arXiv.2401.07408" target="_blank">Nature Machine Intelligence</a>.</p>
+        </div>
+
+        <div class="project-item">
+            <h3><a href="https://github.com/srivathsanb14/thermo_package" target="_blank">THALA - Thermodynamics Helper and Analysis Library for Applications</a></h3>
+            <p>Released a Python library for thermodynamic analysis, supporting end-to-end project completion and version control. Available on <a href="https://github.com/srivathsanb14/thermo_package" target="_blank">GitHub</a>.</p>
+        </div>
+    </div>
+
+    <!-- Generative AI / LLMs Projects -->
+    <div class="project-category generative-ai">
+        <h3>Generative AI / LLMs</h3>
+
+        <div class="project-item">
+            <h3><a href="https://dreampodcasts.com" target="_blank">Generative AI Podcasts</a></h3>
+            <p>Developed a generative AI pipeline to create automated podcasts using LLMs and TTS models, enhancing public accessibility to knowledge through <a href="https://dreampodcasts.com" target="_blank">DreamPods</a> and on <a href="https://spotify.com" target="_blank">@dreampods</a> on Spotify.</p>
+        </div>
+
+        <div class="project-item">
+            <h3>Automated Lecture Video Creation</h3>
+            <p>Developed an automated ML pipeline to convert PDFs to lecture videos, significantly reducing preparation time for educators and aiding universities in efficient content creation.</p>
+        </div>
+    </div>
+
+    <!-- Time Series & Machine Learning Modeling Projects -->
+    <div class="project-category time-series">
+        <h3>Time Series & Machine Learning Modeling</h3>
+
+        <div class="project-item">
+            <h3>Data-Driven Optimization of Refinery Process Operations</h3>
+            <p>Built accurate multivariate deep learning models to optimize refinery operations, increasing profitability and operational efficiency. Results presented through a concise 3-minute presentation to 50+ scholars.</p>
+        </div>
+
+        <div class="project-item">
+            <h3>Machine Learning Pipeline for Object Recognition</h3>
+            <p>Designed a machine learning pipeline for object recognition deployed on AWS Sagemaker, reducing service wait times by 50% through efficient appliance identification.</p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2024 Srivathsan Badrinarayanan</p>
+</footer>
+
 </body>
 </html>
