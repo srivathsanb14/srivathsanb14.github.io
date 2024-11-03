@@ -6,28 +6,7 @@
     <title>Projects | Srivathsan Badrinarayanan</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 1em;
-            text-decoration: none;
-        }
-
+        /* Additional styling for projects layout */
         section {
             padding: 2em;
             max-width: 1000px;
@@ -52,6 +31,8 @@
         .time-series { background-color: #f0fff0; }
 
         .project-item {
+            display: flex;
+            align-items: flex-start;
             margin: 1em 0;
             padding: 1em;
             background: #fff;
@@ -65,18 +46,32 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .project-item img {
+            width: 150px;
+            height: 150px;
+            margin-right: 1em;
+            object-fit: cover;
+            border-radius: 8px;
+            background-color: #eee;
+        }
+
+        .project-item .content {
+            flex: 1;
+        }
+
         .project-item h3 {
             margin-top: 0;
             color: #0056b3;
         }
 
-        .project-item a {
-            text-decoration: none;
-            color: inherit;
+        .project-links {
+            margin-top: 0.5em;
         }
 
-        .project-item p {
-            color: #555;
+        .project-links a {
+            margin-right: 1em;
+            color: #0056b3;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -99,18 +94,39 @@
         <h3>AI4Science</h3>
 
         <div class="project-item">
-            <h3><a href="https://github.com/srivathsanb14/MultiPeptide" target="_blank">Multi-Peptide: Multimodality Leveraged Language-Graph Learning of Peptide Properties</a></h3>
-            <p>Developed a multimodal deep learning model for peptide property prediction, combining sequence and structural data using contrastive learning. Achieved state-of-the-art results, leading to an <a href="https://doi.org/10.48550/arXiv.2407.03380" target="_blank">arXiv publication</a>.</p>
+            <img src="path/to/multi-peptide-image.jpg" alt="Multi-Peptide Project Image" onerror="this.style.display='none'">
+            <div class="content">
+                <h3>Multi-Peptide: Multimodality Leveraged Language-Graph Learning of Peptide Properties</h3>
+                <p>Developed a multimodal deep learning model for peptide property prediction, combining sequence and structural data using contrastive learning. Achieved state-of-the-art results.</p>
+                <div class="project-links">
+                    <a href="https://doi.org/10.48550/arXiv.2407.03380" target="_blank">Paper</a>
+                    <a href="https://github.com/srivathsanb14/MultiPeptide" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
 
         <div class="project-item">
-            <h3>Multimodal Language and Graph Learning of Adsorption Configuration in Catalysis</h3>
-            <p>Created a generative-predictive pipeline to predict adsorption energy for adsorbate-catalyst systems, combining LLMs and graph-based multimodal learning. Research accepted in <a href="https://doi.org/10.48550/arXiv.2401.07408" target="_blank">Nature Machine Intelligence</a>.</p>
+            <img src="path/to/adsorption-project-image.jpg" alt="Adsorption Configuration Project Image" onerror="this.style.display='none'">
+            <div class="content">
+                <h3>Multimodal Language and Graph Learning of Adsorption Configuration in Catalysis</h3>
+                <p>Created a generative-predictive pipeline to predict adsorption energy for adsorbate-catalyst systems, combining LLMs and graph-based multimodal learning.</p>
+                <div class="project-links">
+                    <a href="https://doi.org/10.48550/arXiv.2401.07408" target="_blank">Paper</a>
+                    <a href="https://github.com/srivathsanb14/adsorption-project" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
 
         <div class="project-item">
-            <h3><a href="https://github.com/srivathsanb14/thermo_package" target="_blank">THALA - Thermodynamics Helper and Analysis Library for Applications</a></h3>
-            <p>Released a Python library for thermodynamic analysis, supporting end-to-end project completion and version control. Available on <a href="https://github.com/srivathsanb14/thermo_package" target="_blank">GitHub</a>.</p>
+            <img src="path/to/thala-image.jpg" alt="THALA Project Image" onerror="this.style.display='none'">
+            <div class="content">
+                <h3>THALA - Thermodynamics Helper and Analysis Library for Applications</h3>
+                <p>Released a Python library for thermodynamic analysis, supporting end-to-end project completion and version control.</p>
+                <div class="project-links">
+                    <a href="https://doi.org/10.48550/arXiv.2407.06789" target="_blank">Paper</a>
+                    <a href="https://github.com/srivathsanb14/thermo_package" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -119,13 +135,19 @@
         <h3>Generative AI / LLMs</h3>
 
         <div class="project-item">
-            <h3><a href="https://dreampodcasts.com" target="_blank">Generative AI Podcasts</a></h3>
-            <p>Developed a generative AI pipeline to create automated podcasts using LLMs and TTS models, enhancing public accessibility to knowledge through <a href="https://dreampodcasts.com" target="_blank">DreamPods</a> and on <a href="https://spotify.com" target="_blank">@dreampods</a> on Spotify.</p>
+            <img src="path/to/dreampods-image.jpg" alt="DreamPods Project Image" onerror="this.style.display='none'">
+            <div class="content">
+                <h3>Generative AI Podcasts</h3>
+                <p>Developed a generative AI pipeline to create automated podcasts using LLMs and TTS models, enhancing public accessibility to knowledge.</p>
+            </div>
         </div>
 
         <div class="project-item">
-            <h3>Automated Lecture Video Creation</h3>
-            <p>Developed an automated ML pipeline to convert PDFs to lecture videos, significantly reducing preparation time for educators and aiding universities in efficient content creation.</p>
+            <img src="path/to/lecture-video-image.jpg" alt="Automated Lecture Video Creation Project Image" onerror="this.style.display='none'">
+            <div class="content">
+                <h3>Automated Lecture Video Creation</h3>
+                <p>Developed an automated ML pipeline to convert PDFs to lecture videos, reducing preparation time for educators and aiding efficient content creation.</p>
+            </div>
         </div>
     </div>
 
@@ -134,13 +156,19 @@
         <h3>Time Series & Machine Learning Modeling</h3>
 
         <div class="project-item">
-            <h3>Data-Driven Optimization of Refinery Process Operations</h3>
-            <p>Built accurate multivariate deep learning models to optimize refinery operations, increasing profitability and operational efficiency. Results presented through a concise 3-minute presentation to 50+ scholars.</p>
+            <img src="path/to/refinery-optimization-image.jpg" alt="Refinery Process Optimization Project Image" onerror="this.style.display='none'">
+            <div class="content">
+                <h3>Data-Driven Optimization of Refinery Process Operations</h3>
+                <p>Built accurate multivariate deep learning models to optimize refinery operations, increasing profitability and operational efficiency.</p>
+            </div>
         </div>
 
         <div class="project-item">
-            <h3>Machine Learning Pipeline for Object Recognition</h3>
-            <p>Designed a machine learning pipeline for object recognition deployed on AWS Sagemaker, reducing service wait times by 50% through efficient appliance identification.</p>
+            <img src="path/to/object-recognition-image.jpg" alt="Object Recognition Project Image" onerror="this.style.display='none'">
+            <div class="content">
+                <h3>Machine Learning Pipeline for Object Recognition</h3>
+                <p>Designed a machine learning pipeline for object recognition deployed on AWS Sagemaker, reducing service wait times by 50%.</p>
+            </div>
         </div>
     </div>
 
