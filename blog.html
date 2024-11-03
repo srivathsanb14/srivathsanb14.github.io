@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Srivathsan Badrinarayanan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling for the blog page */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2em;
+        }
+
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5em;
+        }
+
+        .blog-category {
+            margin-top: 2em;
+            background-color: #f9f9f9;
+            padding: 1.5em;
+            border-radius: 8px;
+        }
+
+        .blog-category h3 {
+            color: #333;
+            margin-bottom: 1em;
+        }
+
+        .blog-post {
+            margin: 1em 0;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            transition: background 0.3s;
+        }
+
+        .blog-post:hover {
+            background-color: #f0f8ff;
+        }
+
+        .blog-post a {
+            text-decoration: none;
+            color: #0056b3;
+            font-size: 1.1em;
+        }
+
+        .blog-post p {
+            margin: 0.5em 0 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+</header>
+
+<section id="blog">
+    <h2>My Blog Posts</h2>
+
+    <!-- AI4Science Blog Section -->
+    <div class="blog-category">
+        <h3>AI4Science</h3>
+        
+        <!-- Blog Post 1 for AI4Science -->
+        <div class="blog-post">
+            <a href="blog-posts/ai4science-post1.html">Understanding Multimodal Learning for Peptide Properties</a>
+            <p>A deep dive into how multimodal models enhance peptide property prediction.</p>
+        </div>
+
+        <!-- Blog Post 2 for AI4Science -->
+        <div class="blog-post">
+            <a href="blog-posts/ai4science-post2.html">Generative Approaches in Catalysis Research</a>
+            <p>Exploring how generative models predict adsorption configurations in catalysis.</p>
+        </div>
+    </div>
+
+    <!-- Generative AI / LLMs Blog Section -->
+    <div class="blog-category">
+        <h3>Generative AI / LLMs</h3>
+        
+        <!-- Blog Post 1 for Generative AI -->
+        <div class="blog-post">
+            <a href="blog-posts/generative-ai-post1.html">Creating Podcasts with Generative AI</a>
+            <p>Leveraging language models and TTS to automate podcast creation.</p>
+        </div>
+
+        <!-- Blog Post 2 for Generative AI -->
+        <div class="blog-post">
+            <a href="blog-posts/generative-ai-post2.html">Automating Lecture Videos from PDFs</a>
+            <p>How machine learning models streamline content creation for educational videos.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 Srivathsan Badrinarayanan</p>
+</footer>
+
+</body>
+</html>
