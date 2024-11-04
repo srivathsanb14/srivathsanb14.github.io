@@ -54,11 +54,10 @@
 <div class="container">
     <h1>Understanding the Protein Structure Prediction Problem and the Role of AI</h1>
 
-    <h2>Part 1: The Complexity of Protein Structure Prediction</h2>
-    <p>Proteins are the foundation of biology, orchestrating nearly every function in our cells. Yet, understanding their structure and function has been a monumental challenge. Scientists have long sought to solve the “protein folding problem” - predicting how a seemingly linear chain of amino acids folds into the unique 3D shape that dictates each protein’s role. With the recent convergence of artificial intelligence and biology, strides are being made at a pace that was unimaginable just a few years ago. This post aims to unpack the science and technology behind these advances, starting with the fundamental problem itself.</p>
+    <p>Proteins are the foundation of biology, orchestrating nearly every function in our cells. Yet, understanding their structure and function has been a mammoth challenge. Scientists have long sought to solve the “protein folding problem” - predicting how a seemingly linear chain of amino acids folds into the unique 3D shape that dictates each protein’s role. With the recent convergence of artificial intelligence and biology, giant strides are being made in the field at a pace that was unimaginable even just a few years ago. This post aims to unpack the tech behind these advances, starting with the fundamental problem itself.</p>
 
     <h2>The Complexity of Protein Structure</h2>
-    <p>Predicting protein structure is challenging because proteins, composed of amino acid chains, fold into complex shapes immediately upon formation. These shapes, or "conformations," define each protein's function, similar to how keys fit specific locks. For example:</p>
+    <p>Predicting protein structure is challenging because proteins, composed of amino acid chains, fold into complex shapes immediately upon formation. These shapes, or "conformations," define each protein's function, for example:</p>
     <ul>
         <li><strong>Enzymes</strong> use their shape to catalyze reactions.</li>
         <li><strong>Antibodies</strong> recognize foreign invaders based on their precise structures.</li>
@@ -69,26 +68,23 @@
     <h2>Why Protein Folding Has Been So Difficult to Predict</h2>
     <p>The applications of protein structure prediction are vast, but the scientific problem itself has been famously difficult for several reasons:</p>
     <ul>
-        <li><strong>Astronomical Number of Possibilities:</strong> A protein with 100 amino acids can theoretically fold in trillions of ways. It’s computationally infeasible to simulate every possible fold to find the correct one.</li>
+        <li><strong>Astronomical Number of Possibilities:</strong> A protein with 100 amino acids can theoretically fold in trillions of ways. It is computationally infeasible and futile to simulate every possible fold to find the correct one.</li>
         <li><strong>Sensitivity to Environment:</strong> Proteins don’t fold in isolation. Environmental factors like temperature, pH, and cellular interactions can influence folding, adding complexity.</li>
         <li><strong>Biological Context:</strong> Proteins don’t always adopt a single, static shape; they may shift conformation based on their role or binding partners.</li>
     </ul>
     <p>Traditional lab-based techniques, like X-ray crystallography and nuclear magnetic resonance (NMR) spectroscopy, are precise but time-intensive and costly, making them impractical for studying the countless unique proteins found in nature.</p>
 
-    <h2>Part 2: The Role of AI – A Paradigm Shift</h2>
+    <h2>The Role of AI – A Paradigm Shift</h2>
     <p>Artificial intelligence, particularly deep learning, has redefined what’s possible in protein structure prediction. By analyzing vast datasets of protein sequences and structures, AI models can recognize patterns linking sequence to shape. This approach bypasses brute-force simulations, instead leveraging statistical patterns and biological principles embedded in data, drastically improving prediction speeds and accuracy.</p>
 
     <h2>How AlphaFold Reimagined Protein Prediction</h2>
     <p>AlphaFold, a pioneering AI model, has achieved breakthrough results by treating protein sequences as if they were languages. This approach leverages the principles of natural language processing (NLP) to predict protein structures based on patterns in amino acid sequences. Here’s how AlphaFold works:</p>
     <ul>
-        <li><strong>Sequence Analysis:</strong> AlphaFold interprets amino acid sequences like sentences, learning relationships between amino acids to predict spatial interactions in the folded structure.</li>
-        <li><strong>Attention Mechanisms:</strong> These mechanisms allow AlphaFold to focus on specific sequence regions with structural significance, such as amino acids likely to form bonds.</li>
+        <li><strong>Sequence Analysis:</strong> AlphaFold interprets amino acid sequences like sentences, learning relationships between amino acids to predict spatial interactions in the folded structure. To be more precise – the amino acids in each peptide or protein sequence can be thought of to be analogous to the alphabet characters in natural language. The shorter chain proteins themselves are similar to words. The sentences, which are a specific set of syntactically correct words, are analogous to longer complete proteins comprised of smaller chains arranged in a specific meaningful way. </li>
+        <li><strong>Attention Mechanisms:</strong> These mechanisms, which form the foundation of modern transformer models, allow AlphaFold to focus on specific sequence regions with structural significance. This corresponds to amino acids likely to form specific bonds in the overall folded protein structure. By assigning weights to certain parts of the sequence, the model prioritizes amino acids that interact, enhancing prediction accuracy. This selective focus is especially useful for interpreting complex protein structures.</li>
         <li><strong>End-to-End Training:</strong> Trained on extensive protein structure databases, AlphaFold generalizes to unseen sequences, resolving structural ambiguities without experimental validation.</li>
     </ul>
     <p>As a result, AlphaFold predicts structures for thousands of proteins, including many previously unknown, with remarkable accuracy and speed.</p>
-
-    <h2>The Role of Attention Mechanisms</h2>
-    <p>Attention mechanisms are a transformative element in AlphaFold. By assigning weights to certain parts of the sequence, the model prioritizes amino acids that interact, enhancing prediction accuracy. This selective focus is especially useful for interpreting complex protein structures.</p>
 
     <h2>AlphaFold’s Broader Impact on Protein Science</h2>
     <p>AlphaFold’s AI models have opened doors previously considered closed. Some notable impacts include:</p>
@@ -98,7 +94,6 @@
         <li><strong>Synthetic Biology and Bioengineering:</strong> Designing proteins with specific structures paves the way for synthetic enzymes, biomaterials, and even programmable therapeutic proteins.</li>
     </ul>
 
-    <h2>Limitations and Future Directions</h2>
     <p>While AlphaFold’s impact is transformative, challenges remain. Currently, AlphaFold predicts static structures, while proteins are dynamic and often change shape based on their cellular environment. Future AI models may incorporate this flexibility, predicting multiple conformations or simulating environmental responses to capture proteins’ dynamic nature.</p>
 
     <a href="../blog.html" class="back-link">&larr; Back to Blog</a>
