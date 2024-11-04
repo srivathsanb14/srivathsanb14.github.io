@@ -9,20 +9,24 @@
         /* Styling for the blog page */
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         section {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
             padding: 2em;
             display: flex;
             gap: 2em;
+            margin-top: 1.5em; /* Additional space below the title */
         }
 
         h2 {
             color: #444;
             text-align: center;
-            padding-bottom: 0.5em;
+            margin-top: 0.5em;
+            padding-bottom: 1.5em; /* Adds more spacing below the title */
         }
 
         .blog-category {
@@ -57,6 +61,13 @@
             text-decoration: none;
             color: #0056b3;
             font-size: 1.1em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3em; /* Positions footer well below the blog categories */
+            padding: 1em 0;
+            background-color: #f1f1f1;
         }
     </style>
 </head>
