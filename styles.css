@@ -110,6 +110,11 @@ h2 {
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
+ul {
+    padding-left: 20px; /* Adjust as needed */
+    margin-left: 0;
+    list-style-position: inside;
+}
 
 /* About Section */
 #about p {
