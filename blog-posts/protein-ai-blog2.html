@@ -26,9 +26,9 @@
         
         <p>Transformers have become foundational in AI-driven protein science. Originally developed for language processing, transformer architectures can handle sequences by learning complex dependencies between tokens (or words). For protein science, these "tokens" correspond to amino acids, where understanding the relationships between them can reveal significant insights into protein folding and function. Transformers use a self-attention mechanism that allows each amino acid in a sequence to "attend" to others, learning contextual relationships that are essential in understanding a protein’s structure.</p>
         
-        <p>Protein sequences may not be human languages, but they exhibit patterns and hierarchies that make them compatible with language-like processing. Just as words in a sentence follow grammatical rules, amino acids follow specific biochemical and structural rules. Transformer models, such as ProtBERT and ESM-2, are designed to "learn" these rules by training on massive protein sequence databases. By treating amino acids as “tokens,” these models can predict how sequences translate into 3D conformations—a task critical to applications like drug discovery and understanding disease mechanisms.</p>
+        <p>Protein sequences may not be human languages, but they exhibit patterns and hierarchies that make them compatible with language-like processing, as seen in the previous post. Just as words in a sentence follow grammatical rules, amino acids follow specific biochemical and structural rules. Transformer models, such as ProtBERT and ESM-2, are designed to "learn" these rules by training on massive protein sequence databases. ProtBERT and ESM-2 represent specialized transformer models adapted for protein science. ProtBERT, for example, was trained on large-scale protein data and can identify structural patterns across diverse sequences. ESM-2, developed by Meta, leverages an advanced transformer model to predict protein structure with high accuracy, enabling researchers to discover functional insights with minimal experimental validation.</p>
         
-        <p>ProtBERT and ESM-2 represent specialized transformer models adapted for protein science. ProtBERT, for example, was trained on large-scale protein data and can identify structural patterns across diverse sequences. ESM-2, developed by Meta, leverages an advanced transformer model to predict protein structure with high accuracy, enabling researchers to discover functional insights with minimal experimental validation.</p>
+        <p>By treating amino acids as “tokens,” these models can predict how sequences translate into different outputs - either be it the corresponding 3D conformation, or even the overall protein property. These tasks are critical to applications like drug discovery and understanding disease mechanisms.</p>
         
         <h2>Going 3D: Using Graph Neural Networks (GNNs) for Protein Structures</h2>
         
@@ -37,7 +37,7 @@
         
         <p>In a protein’s graph representation, each node corresponds to an amino acid, while edges represent spatial relationships between these amino acids. The graph model need not necessarily be a direct representation of the 3D structure, but may also capture other information like atomic radius, bond length among others. This graphical representation enables the model to understand not just sequence order but also how different amino acids interact spatially. For example, an enzyme’s active site may depend on interactions between distant amino acids brought together through folding. By “learning” the spatial connectivity, GNNs can recognize these critical functional sites.</p>
         
-        <h3>Different GNN Architectures in Protein Science</h3>
+        <p>There are different GNN Architectures in protein science, which serve different purposes. Some of them include:</p>
         
         <ul>
             <li><strong>Message-Passing Networks:</strong> These GNNs transmit information between nodes (amino acids) over edges. Each amino acid updates its information based on its neighbors, allowing the model to capture complex structural dependencies.</li>
@@ -49,9 +49,9 @@
         
         <h2>Multimodal Models: Integrating Sequence, Structure, and Function Data</h2>
         
-        <p>The real breakthrough comes from multimodal models, which integrate various data types—sequence, structure, and functional annotations. By combining sequence data from transformers and spatial data from GNNs, multimodal models create a comprehensive representation of proteins. This integration is particularly valuable for complex tasks like predicting protein function, where both sequence and structural information play a crucial role.</p>
+        <p>The real breakthrough comes from multimodal models, which integrate various data types - sequence, structure, and functional annotations. By combining sequence data from transformers and spatial data from GNNs, multimodal models create a comprehensive representation of proteins. This integration is particularly valuable for complex tasks like predicting protein function, where both sequence and structural information play a crucial role.</p>
                
-        <p>In multimodal models, transformers analyze the protein sequence, while GNNs handle 3D structural data. The model then combines these outputs to predict protein properties with unprecedented accuracy. For instance, in drug discovery, understanding both the protein’s sequence and its structure is essential for designing effective drug molecules. The integration of both data types provides a holistic view, allowing researchers to model complex interactions at a molecular level.</p>
+        <p>In multimodal models, transformers analyze the protein sequence, while GNNs handle 3D structural data. The model then combines these outputs to predict protein properties with great accuracy. For instance, in drug discovery, understanding both the protein’s sequence and its structure is essential for designing effective drug molecules. The integration of both data types provides a holistic view, allowing researchers to model complex interactions at a molecular level.</p>
         
         <h3>Contrastive Learning for Sequence-Structure Matching</h3>
         
@@ -61,9 +61,8 @@
         
         <p>The applications of multimodal AI in protein science are wide-ranging. In drug discovery, multimodal models help predict how a drug will interact with multiple protein targets, improving selectivity and reducing side effects. In synthetic biology, researchers can use these models to design proteins with specific functions, such as enzymes tailored for industrial applications or proteins engineered for therapeutic purposes.</p>
         
-        <h2>Conclusion: The Future of Protein AI</h2>
         
-        <p>The convergence of transformers, GNNs, and multimodal models has redefined protein science, offering new ways to understand the structure-function relationship at molecular and atomic scales. While each model type—transformers, GNNs, and the combined multimodal architectures—offers unique advantages, their combined use has empowered researchers to tackle some of the most complex challenges in biology. From predicting protein structures to designing new proteins for medical and industrial applications, AI has become an invaluable tool in decoding the secrets of life itself. As AI in protein science continues to evolve, we can expect further integration of data modalities, moving toward a future where AI not only predicts protein structures but also simulates their interactions in living systems.</p>
+        <p>The convergence of transformers, GNNs, and multimodal models has redefined protein science, offering new ways to understand the structure-function relationship at molecular and atomic scales. While each model type—transformers, GNNs, and the combined multimodal architectures—offers unique advantages, their combined use has empowered researchers to tackle some of the most complex challenges in biology. As AI in protein science continues to evolve, we can expect further integration of data modalities, moving toward a future where AI not only predicts protein structures but also potentially simulates their interactions in biological systems.</p>
 
     
         <a href="../blog.html" class="back-link">&larr; Back to Blog</a>
