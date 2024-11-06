@@ -51,12 +51,31 @@
         
         <p>The real breakthrough comes from multimodal models, which integrate various data types - sequence, structure, and functional annotations. By combining sequence data from transformers and spatial data from GNNs, multimodal models create a comprehensive representation of proteins. This integration is particularly valuable for complex tasks like predicting protein function, where both sequence and structural information play a crucial role.</p>
                
-        <p>In multimodal models, transformers analyze the protein sequence, while GNNs handle 3D structural data. The model then combines these outputs to predict protein properties with great accuracy. For instance, in drug discovery, understanding both the protein’s sequence and its structure is essential for designing effective drug molecules. The integration of both data types provides a holistic view, allowing researchers to model complex interactions at a molecular level.</p>
+        <p>In multimodal models, typically, transformers analyze the protein sequence, while GNNs handle 3D structural data. The model then combines these outputs to predict protein properties with great accuracy. For instance, in drug discovery, understanding both the protein’s sequence and its structure is essential for designing effective drug molecules. The integration of both data types provides a holistic view, allowing researchers to model complex interactions at a molecular level. Two of the most impactful techniques within this space are contrastive learning and self-supervised learning (SSL), which enable deeper insights from vast protein datasets.</p>
         
         <h3>Contrastive Learning for Sequence-Structure Matching</h3>
         
-        <p>One exciting approach in multimodal protein models is the use of contrastive learning, a framework where pairs of matching and non-matching data (e.g., sequence and structure) are contrasted to learn associations. This technique, inspired by models like CLIP in vision-language tasks, has been adapted for proteins. By learning to match sequence data to structural data, multimodal models can predict how variations in sequence might alter structure and, in turn, function.</p>
+        <p>Contrastive learning is a powerful tool in multimodal models, especially for linking sequence and structure data. The technique works by encouraging a model to “contrast” matching pairs (e.g., a protein sequence with its corresponding structure) against non-matching pairs. By learning these associations, contrastive learning creates embeddings that accurately capture relationships across different data types, such as sequences and their structural forms.</p>
+
+	    <p>In practice, multimodal models may employ contrastive learning similarly to methods seen in other AI fields, like vision-language models. For example, just as CLIP matches images with text, a contrastive learning model for proteins would match sequence embeddings with structure embeddings. When a new, unseen protein sequence is given as input, the model can project it into this shared space and predict structural features based on similar sequences it has already encountered, achieving high accuracy even with limited labeled data.</p>
+
+	    <h3>Self-Supervised Learning (SSL) for Protein Data</h3>
+
+	    <p>The success of multimodal models is further amplified by self-supervised learning (SSL), a technique ideal for handling large, unlabeled protein datasets. SSL trains models to learn from raw data without the need for extensive labeling, making it perfect for protein science, where labeling is often labor-intensive. In protein modeling, SSL techniques such as masked language modeling (inspired by BERT) allow models to learn the “grammar” of amino acid sequences, as well as spatial relationships within structural data.</p>
+
+	    <p>Self-supervised pretraining is a two-step process in multimodal protein modeling:</p>
+
+
+        <ul>
+        	<li><strong>Pretraining on Large, Unlabeled Protein Data:</strong> Models are first pretrained on enormous databases of protein sequences and structures. For sequence data, transformers learn through masked language modeling by predicting masked amino acids within a sequence, capturing patterns of biochemical interactions. GNNs, meanwhile, are often pretrained on structural data, learning spatial interactions between amino acids in 3D space.
         
+        	<li><strong>Task-Specific Fine-Tuning:</strong> After pretraining, these models can be fine-tuned for specific downstream tasks, such as binding affinity prediction or mutation impact analysis, using smaller, labeled datasets. The pretraining phase endows models with a strong foundational understanding of protein characteristics, making fine-tuning faster and more effective.
+                
+        </ul>
+
+
+	    <p>In combination with contrastive learning, self-supervised learning in multimodal models creates a powerful synergy. SSL establishes a broad, foundational understanding of protein data, while contrastive learning sharpens the model’s ability to connect different modalities, such as sequence and structure. Together, they allow protein AI models to achieve unprecedented accuracy and robustness, even in challenging, data-scarce scenarios.</p>
+
         <br/>
         
         <p>The applications of multimodal AI in protein science are wide-ranging. In drug discovery, multimodal models help predict how a drug will interact with multiple protein targets, improving selectivity and reducing side effects. In synthetic biology, researchers can use these models to design proteins with specific functions, such as enzymes tailored for industrial applications or proteins engineered for therapeutic purposes.</p>
