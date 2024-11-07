@@ -6,28 +6,43 @@
     <title>Understanding the Protein Structure Prediction Problem and the Role of AI in how we tried to solve it</title>
     <link rel="stylesheet" href="../styles.css">
     <style>
-        /* Blog post specific styling */
+        /* Blog post specific styling aligned with styles.css */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
+        .wrapper {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            color: #333;
+            color: #2d3e50;
             text-align: center;
-            margin-bottom: 0.5em;
+            font-size: 1.8em;
+            margin-bottom: 1em;
         }
 
-        h2, h3 {
-            color: #444;
+        h2 {
+            font-size: 1.4em;
+            color: #3a5a9f;
+            border-bottom: 2px solid #3a5a9f;
+            padding-bottom: 0.2em;
+            margin-top: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        h4 {
+            font-size: 1.2em;
+            color: #2d3e50;
+            margin-top: 1.5em;
         }
 
         p {
@@ -39,21 +54,44 @@
             display: inline-block;
             margin-top: 1.5em;
             text-decoration: none;
-            color: #0056b3;
+            color: #3a5a9f;
             font-weight: bold;
+        }
+
+        .back-link:hover {
+            color: #1a3467;
         }
 
         ul {
             list-style-type: disc;
             margin-left: 1.5em;
+            color: #333;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin: 1em 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        em {
+            font-size: 0.9em;
+            color: gray;
+            text-align: center;
+            display: block;
+            margin-top: -0.5em;
+            margin-bottom: 1.5em;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="wrapper">
     <h1>Understanding the Protein Structure Prediction Problem and the Role of AI in how we tried to solve it</h1>
     <p>Proteins are the foundation of biology, orchestrating nearly every function in our cells. Yet, understanding their structure and function has been a mammoth challenge. The <a href="https://www.science.org/doi/10.1126/science.181.4096.223" target="_blank">hypothesis</a> that a protein’s structure is determined by the sequence of amino acids that make it up, led Christian Anfinsen to the 1972 Nobel Prize in Chemistry. Ever since, scientists have sought to solve the “protein folding problem” - predicting how a seemingly linear chain of amino acids folds into the unique 3D shape that dictates each protein’s role. With the recent convergence of artificial intelligence and biology, giant strides are being made in the field at a pace that was unimaginable even just a few years ago. This post aims to unpack the tech behind these advances, starting with the fundamental problem itself.</p>
+    
     <h2>The Complexity of Protein Structure</h2>
     <p>Predicting protein structure is challenging because proteins, composed of amino acid chains, fold into complex shapes immediately upon formation. These shapes, or "conformations," define each protein's function. Determining how the complex folding occurs from the amino acid sequence alone is a significant challenge. If we knew the 3D structure of any protein, we could understand its function and gain insights into processes like disease mechanisms, drug binding, and synthetic bioengineering.</p>
     <p>The applications of protein structure prediction are vast, but the scientific problem itself has been famously difficult for several reasons:</p>
@@ -63,39 +101,46 @@
         <li><strong>Biological Context:</strong> Proteins don’t always adopt a single, static shape; they may shift conformation based on their role or binding partners.</li>
     </ul>
     <p>Advances in genomics, proteomics and molecular biology have generated vast datasets over the years. Numerous experimental procedures have helped scientists accurately determine the structure of a vast array of proteins, which have been added to the <a href="https://www.rcsb.org/" target="_blank">Protein Data Bank</a>. However, traditional lab-based techniques, like X-ray crystallography and nuclear magnetic resonance (NMR) spectroscopy, are precise but time-intensive and costly, making them impractical for studying the countless unique proteins found in nature.</p>
+    
     <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4196035/" target="_blank">
-    <img src="protein-ai-blog1/PDB-history.jpg" alt="PDB database size over the years" style="width:100%; height:auto; margin:1em 0;"></a>
-    <p style="font-size:0.9em; text-align:center; color:gray;"><em>PDB database size over the years - The Protein Data Bank archive as an open data resource, Berman et. al.</em></p>
+        <img src="protein-ai-blog1/PDB-history.jpg" alt="PDB database size over the years">
+    </a>
+    <em>PDB database size over the years - The Protein Data Bank archive as an open data resource, Berman et. al.</em>
+    
     <h2>How AlphaFold Reimagined Protein Prediction</h2>
-    <p>Artificial intelligence, particularly deep learning, has redefined what’s possible in protein structure prediction. By analyzing vast datasets of protein sequences and structures, AI models can recognize patterns linking sequence to shape. This approach bypasses brute-force simulations, instead leverages statistical patterns and biological principles present in data, thereby drastically improving prediction speeds and accuracy.</p>
+    <p>Artificial intelligence, particularly deep learning, has redefined what’s possible in protein structure prediction. By analyzing vast datasets of protein sequences and structures, AI models can recognize patterns linking sequence to shape. This approach bypasses brute-force simulations, instead leveraging statistical patterns and biological principles present in data, thereby drastically improving prediction speeds and accuracy.</p>
     <p><a href="https://deepmind.google/technologies/alphafold/" target="_blank">AlphaFold</a> (from DeepMind), a pioneering AI model for protein structure prediction, has achieved breakthrough results by treating protein sequences as if they were languages. This approach leverages the principles of language modeling to predict protein structures based on patterns in amino acid sequences. Here’s how AlphaFold works:</p>
-    <h4>Sequence Analysis</h4> 
-    <p>AlphaFold interprets amino acid sequences like sentences, learning relationships between amino acids to predict spatial interactions in the folded structure. To be more precise – the amino acids in each peptide or protein sequence can be thought of to be analogous to the alphabet characters in natural language.<p>
-    <ul> 
-    <li>Each of the twenty common amino acids are represented by a one-letter or three-letter representation to mimic natural language characters.</li>
-    <li>The shorter chain peptides, made up of around ~50 amino acids, are similar to words (e.g., "MKWVTFISLL" for a portion of a peptide).</li>
-    <li>The sentences, which are a specific set of syntactically correct words, are analogous to longer complete proteins comprised of smaller chains arranged in a specific meaningful way. It is important to note here that the order of amino acids determines the structure and function of the protein.</li>
-    </ul>    
-    <a href="https://arxiv.org/pdf/2201.07338" target="_blank">
-    <img src="protein-ai-blog1/Protein-language.png" alt="Proteins and language - similarities and analogies" style="width:100%; height:auto; margin:1em 0;"></a>
-    <p style="font-size:0.9em; text-align:center; color:gray;"><em>Proteins and language - Towards Controllable Protein Design with Conditional Transformers, Ferruz and Höcker</em></p>
-    <h4>Alignment Mechanisms</h4>  
-    <p>AlphaFold2 uses multiple sequence alignment (MSA), where many similar protein sequences are set alongside each other. By comparing and analyzing sequences of similar proteins, AlphaFold2 can identify evolutionary relationships between different proteins. A high-quality MSA is essential for AlphaFold2's accurate predictions and serves as a key input to the model's neural network, known as the Evoformer.<p>
-    <h4>Pair Representations</h4> 
-    <p>The Evoformer network interprets and updates both the MSA and a unique feature called "pair representations." In AlphaFold2, every pair of amino acid residues in the protein, regardless of distance, is represented separately, enabling the software to encode relationships between them. This information can ultimately be interpreted as the relative positions and distances between amino acids, refining the structural hypothesis. Evoformer’s continuous flow of information between the MSA and these pair representations allows it to reason about spatial relationships, thereby enhancing the model’s prediction accuracy.</p>
-    <p>These alignment and pair representation mechanisms are conceptually similar to the attention mechanisms used in transformer models, enabling AlphaFold2 to focus on specific regions of the sequence that are structurally significant. In a naive transformer model, this is achieved by assigning weights to particular parts of the sequence to prioritize amino acids likely to interact and form bonds. This selective focus is especially useful for interpreting complex protein structures, ultimately enhancing the model's ability to make precise predictions.</p>
-
-    <p>Trained on extensive protein structure databases, AlphaFold generalizes to unseen sequences, resolving structural ambiguities without experimental validation. As a result, AlphaFold predicts structures for thousands of proteins, including many previously unknown, with remarkable accuracy and speed. The latest version of the AlphaFold model, AlphaFold3 which introduces the Pairformer model in conjunction with difusion, is not limited to just single-chain proteins, but can also deal with and predict structures of complexes with DNA, RNA and some selected ligands and ions as well.</p>
-
-    <h2>AlphaFold’s Broader Impact on Protein Science</h2>
-    <p>AlphaFold’s AI models have opened doors previously considered closed. Some notable impacts are in the fields of:</p>
+    
+    <h4>Sequence Analysis</h4>
+    <p>AlphaFold interprets amino acid sequences like sentences, learning relationships between amino acids to predict spatial interactions in the folded structure.</p>
+    
     <ul>
-        <li><strong>Drug Discovery:</strong> With knowledge of target protein structures, researchers can design drugs that fit precisely, enhancing drug discovery efficiency.</li>
-        <li><strong>Genetic Disease Research:</strong> Many diseases arise from protein misfolding or malfunctions. AI tools enable researchers to model these “problematic” proteins, providing insights into disease mechanisms and potential treatments.</li>
-        <li><strong>Synthetic Biology and Bioengineering:</strong> Designing proteins with specific structures paves the way for synthetic enzymes, biomaterials, and even programmable therapeutic proteins.</li>
+        <li>Each of the twenty common amino acids are represented by a one-letter or three-letter representation to mimic natural language characters.</li>
+        <li>Shorter peptides (~50 amino acids) are similar to words.</li>
+        <li>Complete proteins are like sentences, arranged in a meaningful way, with the order of amino acids determining structure and function.</li>
+    </ul>
+    
+    <a href="https://arxiv.org/pdf/2201.07338" target="_blank">
+        <img src="protein-ai-blog1/Protein-language.png" alt="Proteins and language - similarities and analogies">
+    </a>
+    <em>Proteins and language - Towards Controllable Protein Design with Conditional Transformers, Ferruz and Höcker</em>
+    
+    <h4>Alignment Mechanisms</h4>
+    <p>AlphaFold2 uses multiple sequence alignment (MSA) to identify evolutionary relationships between similar proteins, essential for accurate predictions.</p>
+    
+    <h4>Pair Representations</h4>
+    <p>The Evoformer network interprets and updates both the MSA and a unique feature called "pair representations." These mechanisms, akin to attention mechanisms in transformer models, allow the model to focus on structurally significant regions.</p>
+    
+    <p>Trained on extensive protein structure databases, AlphaFold generalizes to unseen sequences, resolving structural ambiguities without experimental validation. The latest version, AlphaFold3, introduces Pairformer with diffusion to predict structures of complexes with DNA, RNA, and selected ligands and ions.</p>
+    
+    <h2>AlphaFold’s Broader Impact on Protein Science</h2>
+    <ul>
+        <li><strong>Drug Discovery:</strong> Knowledge of target protein structures enhances drug design efficiency.</li>
+        <li><strong>Genetic Disease Research:</strong> Modeling misfolded proteins provides insights into disease mechanisms.</li>
+        <li><strong>Synthetic Biology and Bioengineering:</strong> Designing proteins with specific structures opens new possibilities in bioengineering.</li>
     </ul>
 
-    <p>While AlphaFold’s impact is transformative, challenges remain. Currently, AlphaFold predicts static structures, while proteins are dynamic and often change shape based on their cellular environment. Future AI models may incorporate this flexibility, predicting multiple conformations or simulating environmental responses to capture proteins’ dynamic nature.</p>
+    <p>While AlphaFold’s impact is transformative, challenges remain. Future models may predict multiple conformations, capturing proteins’ dynamic nature.</p>
 
     <a href="../blog.html" class="back-link">&larr; Back to Blog</a>
 </div>
