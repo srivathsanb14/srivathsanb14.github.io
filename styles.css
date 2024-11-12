@@ -111,7 +111,7 @@ h2 {
     margin-bottom: 15px;
 }
 ul {
-    padding-left: 20px; /* Adjust as needed */
+    padding-left: 20px;
     margin-left: 0;
     list-style-position: inside;
 }
@@ -178,6 +178,42 @@ footer {
     font-size: 0.9em;
 }
 
+/* Blog Page Styling */
+#blog .blog-category {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-top: 1.5em;
+}
+
+#blog .blog-category h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5em;
+}
+
+.blog-post {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: background 0.3s;
+}
+
+.blog-post:hover {
+    background-color: #f0f8ff;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 1.1em;
+}
+
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
     /* General Adjustments */
@@ -208,13 +244,19 @@ footer {
         font-size: 1.2em;
     }
 
+    nav {
+        text-align: center;
+    }
+    
     nav a {
+        display: inline-block; /* Keeps links horizontal on mobile */
         font-size: 0.9em;
-        margin: 0 5px;
+        margin: 5px 10px;
     }
 
-    .project-item .content, .blog-category {
-        padding: 0.5em;
+    /* Extra space for AI Catalysis section on mobile */
+    #blog .blog-category:last-child {
+        margin-top: 20px;
     }
 
     /* Footer */
@@ -235,16 +277,3 @@ footer {
         width: 90%;
     }
 }
-
-
-@media (max-width: 768px) {
-    nav {
-        text-align: center;
-    }
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-}
-
-
