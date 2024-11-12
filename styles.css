@@ -284,3 +284,11 @@ footer {
         height: 80px;
     }
 }
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Stack blog categories vertically */
+        padding: 1em; /* Optional: Adjust padding for smaller screens */
+    }
+}
