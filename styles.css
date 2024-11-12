@@ -177,3 +177,74 @@ footer {
     color: #506080;
     font-size: 0.9em;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* General Adjustments */
+    .wrapper, section {
+        padding: 10px;
+    }
+
+    /* Adjust container and section flex for smaller screens */
+    .container, .project-category, .blog-category {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .project-item, .blog-post {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Image adjustments for smaller screens */
+    .project-item img, .profile-photo-circle {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust content padding and font sizes */
+    .left-section h1, .project-item h3, .blog-category h3, .blog-post a {
+        font-size: 1.2em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+        margin: 0 5px;
+    }
+
+    .project-item .content, .blog-category {
+        padding: 0.5em;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+/* Further adjustments for smaller screens (optional) */
+@media (max-width: 600px) {
+    .container, .project-item, .blog-category {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .project-item img {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
