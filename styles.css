@@ -277,3 +277,10 @@ footer {
         width: 90%;
     }
 }
+
+@media (max-width: 768px) {
+    .profile-photo-circle {
+        width: 80px; /* reduced size */
+        height: 80px;
+    }
+}
