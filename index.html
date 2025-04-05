@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Srivathsan Badrinarayanan - AI Engineer and Researcher specializing in machine learning, data science, and AI for science applications.">
     <title>Srivathsan Badrinarayanan | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for better icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
     
 <body>
@@ -13,23 +19,27 @@
         <header>
             <div class="container">
                 <div class="left-section">
-                    <img src="utils/image.jpg" alt="Photo of Srivathsan" class="profile-photo-circle">
+                    <div class="profile-container">
+                        <img src="utils/image.jpg" alt="Photo of Srivathsan" class="profile-photo-circle">
+                    </div>
                     <h1>Srivathsan (Sri) Badrinarayanan</h1>
-                    <p>AI Engineer | Data Scientist | Researcher</p>
-                    <p>Master's Student - AI Engineering + Chemical Engineering</p>
-                    <p>Carnegie Mellon University</p>
-                    <p><a href="mailto:srivathsanb14@gmail.com">srivathsanb14@gmail.com</a></p>
+                    <div class="title-container">
+                        <p class="role">AI Engineer | Data Scientist | Researcher</p>
+                        <p class="education">Master's Student - AI Engineering + Chemical Engineering</p>
+                        <p class="university">Carnegie Mellon University</p>
+                        <p class="email"><a href="mailto:srivathsanb14@gmail.com">srivathsanb14@gmail.com</a></p>
+                    </div>
                     <div class="contact-icons">
-                        <a href="mailto:srivathsanb14@gmail.com" target="_blank"><img src="utils/email-icon.jpg" alt="Email Icon"></a>
-                        <a href="https://www.linkedin.com/in/srivathsan-badrinarayanan" target="_blank"><img src="utils/linkedin-icon.png" alt="LinkedIn Icon"></a>
-                        <a href="https://github.com/srivathsanb14" target="_blank"><img src="utils/github-icon.png" alt="GitHub Icon"></a>
-                        <a href="https://scholar.google.com/citations?user=AXJHEjQAAAAJ&hl=en&oi=ao" target="_blank"><img src="utils/google-scholar-icon.png" alt="Google Scholar Icon"></a>
+                        <a href="mailto:srivathsanb14@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/srivathsan-badrinarayanan" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/srivathsanb14" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?user=AXJHEjQAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
                     </div>
                 </div>
 
                 <div class="right-section">
                     <nav>
-                        <a href="index.html">Home</a>
+                        <a href="index.html" class="active">Home</a>
                         <a href="projects.html">Projects</a>
                         <a href="blog.html">Blog</a>
                     </nav>
@@ -42,37 +52,86 @@
                     <section id="research-interests">
                         <h2>Research Interests</h2>
                         <p>My research interests center on AI4Science and Generative AI. My work spans across two main categories:</p>
-                        <ul>
-                            <li><strong>AI for Science:</strong> I explore the intersection of multimodal transformers and graph neural networks (GNNs) to predict protein properties and optimize catalyst designs, advancing both bioinformatics and materials science.</li>
-                            <li><strong>Generative AI/LLMs:</strong> I also work on enhancing generative AI capabilities, including large language models (LLMs) for applications such as automated creation of presentations and text-to-speech systems for audio-form generation.</li>
-                        </ul>
+                        <div class="research-areas">
+                            <div class="research-card">
+                                <div class="card-icon"><i class="fas fa-dna"></i></div>
+                                <h3>AI for Science</h3>
+                                <p>I explore the intersection of multimodal transformers and graph neural networks (GNNs) to predict protein properties and optimize catalyst designs, advancing both bioinformatics and materials science.</p>
+                            </div>
+                            <div class="research-card">
+                                <div class="card-icon"><i class="fas fa-brain"></i></div>
+                                <h3>Generative AI/LLMs</h3>
+                                <p>I also work on enhancing generative AI capabilities, including large language models (LLMs) for applications such as automated creation of presentations and text-to-speech systems for audio-form generation.</p>
+                            </div>
+                        </div>
                     </section>
-
-                    <br/>
 
                     <section id="skills">
                         <h2>Skills</h2>
                         <div class="skills-list">
-                            <div class="skill-item"><strong>Generative AI:</strong> Transformer models and large language models (LLMs), applied to real-world problems in science and engineering.</div>
-                            <div class="skill-item"><strong>Deep Learning:</strong> CNNs, RNNs, GNNs for processing images, sequences, and graphs, including time-series modeling for predictive analytics</div>
-                            <div class="skill-item"><strong>Tools & Frameworks:</strong> PyTorch, TensorFlow, Keras, HuggingFace, AWS, and scikit-learn for building and deploying machine learning models</div>
-                            <div class="skill-item"><strong>Data Science & Analytics:</strong> Python, R, and SQL for data wrangling, visualization, and performance evaluation to inform strategic decisions</div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                                <div class="skill-content">
+                                    <h3>Generative AI</h3>
+                                    <p>Transformer models and large language models (LLMs), applied to real-world problems in science and engineering.</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                                <div class="skill-content">
+                                    <h3>Deep Learning</h3>
+                                    <p>CNNs, RNNs, GNNs for processing images, sequences, and graphs, including time-series modeling for predictive analytics</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                                <div class="skill-content">
+                                    <h3>Tools & Frameworks</h3>
+                                    <p>PyTorch, TensorFlow, Keras, HuggingFace, AWS, and scikit-learn for building and deploying machine learning models</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                                <div class="skill-content">
+                                    <h3>Data Science & Analytics</h3>
+                                    <p>Python, R, and SQL for data wrangling, visualization, and performance evaluation to inform strategic decisions</p>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
-                    <br/>
-
-                    <a href="https://github.com/srivathsanb14/srivathsanb14.github.io/blob/main/Srivathsan_Badrinarayanan_Resume.pdf" class="btn" target="_blank">Explore My Detailed Career Overview</a>
+                    <div class="cta-container">
+                        <a href="https://github.com/srivathsanb14/srivathsanb14.github.io/blob/main/Srivathsan_Badrinarayanan_Resume.pdf" class="btn" target="_blank">
+                            <i class="fas fa-file-alt"></i> View My Resume
+                        </a>
+                    </div>
                 </div>
-                <div style="clear: both;"></div>
             </div>
         </header>
 
         <footer>
             <div class="container">
-                <p>© 2024 Srivathsan Badrinarayanan</p>
+                <p>© 2024 Srivathsan Badrinarayanan | Made with <i class="fas fa-heart"></i></p>
             </div>
         </footer>
     </div>
+
+    <!-- Simple JavaScript for interactions -->
+    <script>
+        // Add active class to current page in navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLocation = window.location.pathname;
+            const navLinks = document.querySelectorAll('nav a');
+            
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href');
+                if (currentLocation.includes(linkPath) && linkPath !== 'index.html') {
+                    link.classList.add('active');
+                } else if (currentLocation.endsWith('/') && linkPath === 'index.html') {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
