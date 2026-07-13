@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Understanding the protein structure prediction problem and the role of AI in solving it.">
+    <title>Understanding the Protein Structure Prediction Problem | Srivathsan Badrinarayanan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo"><span class="logo-text">SB</span></a>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#education" class="nav-link">Education</a>
+                <a href="../index.html#experience" class="nav-link">Experience</a>
+                <a href="../index.html#research" class="nav-link">Research</a>
+                <a href="../projects.html" class="nav-link">Work</a>
+                <a href="../index.html#skills" class="nav-link">Skills</a>
+                <a href="../blog.html" class="nav-link active">Blog</a>
+            </div>
+            <a href="../Srivathsan_Badrinarayanan_Resume.pdf" target="_blank" class="nav-resume-btn">
+                <i class="fas fa-file-alt"></i> Resume
+            </a>
+        </div>
+    </nav>
+
+    <main class="blog-post-page">
+        <article class="blog-post-content">
+            <a href="../blog.html" class="blog-post-back"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+            <span class="section-label">Protein AI · Part 1</span>
+            <h1>Understanding the Protein Structure Prediction Problem and the Role of AI in how we tried to solve it</h1>
+
+            <p>Proteins are the building blocks of life, orchestrating nearly everything in our cells. But for decades, scientists have wrestled with one daunting question: how do these complex molecules fold into the precise 3D shapes that define their roles? Christian Anfinsen's 1972 Nobel-winning <a href="https://www.science.org/doi/10.1126/science.181.4096.223" target="_blank">hypothesis</a> that a protein's structure is determined by its amino acid sequence kickstarted this journey, inspiring researchers to tackle the "protein folding problem" — predicting how a seemingly linear chain of amino acids folds into the unique 3D shape that dictates each protein's role. But it's only now, with the rise of artificial intelligence, that we're making leaps in solving this puzzle. This post aims to unpack the tech behind these advances, starting with the fundamental problem itself.</p>
+
+            <h2>The Complexity of Protein Structure</h2>
+            <p>Predicting protein structure is challenging because proteins, composed of amino acid chains, fold into complex shapes immediately upon formation. These shapes or conformations define each protein's function. Determining how the complex folding occurs from the amino acid sequence alone is a significant challenge. Imagine trying to predict the shape of an intricate origami piece just by knowing the length of the paper — it's sort of like that! This complexity isn't just a theoretical problem; knowing a protein's 3D structure helps us understand things like disease mechanics, drug interactions, and bioengineering.</p>
+            <p>The applications of protein structure prediction are vast, but the scientific problem itself has been famously difficult for several reasons:</p>
+            <ul>
+                <li><strong>Endless Possibilities:</strong> A typical protein with 100 amino acids could fold in trillions of ways. Running a simulation on all those possibilities? Not realistic and totally futile!</li>
+                <li><strong>Sensitivity to Environment:</strong> Proteins don't fold in isolation. Environmental factors like temperature, pH, and cellular interactions can influence folding, adding complexity.</li>
+                <li><strong>Not One-Way-Fits-All:</strong> Proteins don't always adopt a single, static shape; they may shift conformation based on their role or binding partners.</li>
+            </ul>
+            <p>Over the years, we've accumulated vast amounts of protein data through lab techniques like X-ray crystallography and NMR spectroscopy. However, these methods are time-consuming and expensive, making them impractical for exploring every unique protein. Fortunately, with tools like the <a href="https://www.rcsb.org/" target="_blank">Protein Data Bank</a>, researchers now have access to an expanding archive of protein structures.</p>
+
+            <figure class="blog-post-figure narrow">
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4196035/" target="_blank">
+                    <img src="protein-ai-blog1/PDB-history.jpg" alt="PDB database size over the years">
+                </a>
+                <figcaption class="blog-post-caption">PDB database size over the years — The Protein Data Bank archive as an open data resource, Berman et. al.</figcaption>
+            </figure>
+
+            <h2>How AlphaFold Reimagined Protein Prediction</h2>
+            <p>Artificial intelligence, particularly deep learning, has redefined what's possible in protein structure prediction. With the power to recognize patterns in large datasets, AI models can now connect amino acid sequences with their resulting shapes, bypassing brute-force simulation. This evolution has made structure prediction faster and more accurate.</p>
+
+            <figure class="blog-post-figure narrow">
+                <a href="https://www.nature.com/articles/s41589-024-01638-w" target="_blank">
+                    <img src="protein-ai-blog1/Alphafold.png" alt="Alphafold workflow">
+                </a>
+                <figcaption class="blog-post-caption">Alphafold in the protein prediction workflow — The power and pitfalls of AlphaFold2 for structure prediction beyond rigid globular proteins, Agarwal and McShan</figcaption>
+            </figure>
+
+            <p>One of the biggest players here is <a href="https://deepmind.google/technologies/alphafold/" target="_blank">AlphaFold</a> by DeepMind. AlphaFold treats protein sequences like languages, finding patterns and "relationships" between amino acids to predict the 3D structure. This is no simple task — think of it as decoding a whole new language! Here's a breakdown of how AlphaFold works:</p>
+
+            <h4>Sequence Analysis</h4>
+            <p>AlphaFold interprets amino acid sequences like sentences, learning relationships between amino acids to predict spatial interactions in the folded structure. To be more precise — the amino acids in each peptide or protein sequence can be thought of to be analogous to the alphabet characters in natural language.</p>
+            <ul>
+                <li>Each of the twenty common amino acids are represented by a one-letter or three-letter representation to mimic natural language characters.</li>
+                <li>The shorter chain peptides, made up of around ~50 amino acids, are similar to words (e.g., "MKWVTFISLL" for a portion of a peptide).</li>
+                <li>The sentences, which are a specific set of syntactically correct words, are analogous to longer complete proteins comprised of smaller chains arranged in a specific meaningful way. It is important to note here that the order of amino acids determines the structure and function of the protein.</li>
+            </ul>
+
+            <figure class="blog-post-figure small">
+                <a href="https://arxiv.org/pdf/2201.07338" target="_blank">
+                    <img src="protein-ai-blog1/Protein-language.png" alt="Proteins and language - similarities and analogies">
+                </a>
+                <figcaption class="blog-post-caption">Proteins and language — Towards Controllable Protein Design with Conditional Transformers, Ferruz and Höcker</figcaption>
+            </figure>
+
+            <h4>Alignment Mechanisms</h4>
+            <p>AlphaFold2 uses multiple sequence alignment (MSA), where many similar protein sequences are set alongside each other. By comparing and analyzing sequences of similar proteins, AlphaFold2 can identify evolutionary relationships between different proteins. A high-quality MSA is essential for AlphaFold2's accurate predictions and serves as a key input to the model's neural network, known as the Evoformer.</p>
+
+            <h4>Pair Representations</h4>
+            <p>The Evoformer network interprets and updates both the MSA and a unique feature called "pair representations." In AlphaFold2, every pair of amino acid residues in the protein, regardless of distance, is represented separately, enabling the software to encode relationships between them. This information can ultimately be interpreted as the relative positions and distances between amino acids, refining the structural hypothesis. Evoformer's continuous flow of information between the MSA and these pair representations allows it to reason about spatial relationships, thereby enhancing the model's prediction accuracy.</p>
+
+            <p>These alignment and pair representation mechanisms are conceptually similar to the attention mechanisms used in transformer models, enabling AlphaFold2 to focus on specific regions of the sequence that are structurally significant. In a naive transformer model, this is achieved by assigning weights to particular parts of the sequence to prioritize amino acids likely to interact and form bonds. This selective focus is especially useful for interpreting complex protein structures, ultimately enhancing the model's ability to make precise predictions.</p>
+
+            <p>Trained on extensive protein structure databases, AlphaFold generalizes to unseen sequences, resolving structural ambiguities without experimental validation. As a result, AlphaFold predicts structures for thousands of proteins, including many previously unknown, with remarkable accuracy and speed. The latest version of the AlphaFold model, AlphaFold3 which introduces the Pairformer model in conjunction with diffusion, is not limited to just single-chain proteins, but can also deal with and predict structures of complexes with DNA, RNA and some selected ligands and ions as well.</p>
+
+            <h2>AlphaFold's Broader Impact on Protein Science</h2>
+            <p>AlphaFold's AI models have opened doors previously considered closed. Some notable impacts are in the fields of:</p>
+            <ul>
+                <li><strong>Drug Discovery:</strong> With known target protein structures, researchers can design more precise drugs, streamlining drug development.</li>
+                <li><strong>Genetic Disease Research:</strong> Many diseases stem from protein malfunctions. AI helps model these issues, offering clues for new treatments.</li>
+                <li><strong>Synthetic Biology and Bioengineering:</strong> Designing proteins for specific tasks allows breakthroughs in bioengineering, from synthetic enzymes to therapeutic proteins.</li>
+            </ul>
+
+            <p>While AlphaFold's impact is transformative, there is still work to do. Currently, AlphaFold predicts static structures, while proteins are dynamic and often change shape based on their cellular environment. Future AI models may incorporate this flexibility, predicting multiple conformations or simulating environmental responses to capture proteins' dynamic nature.</p>
+
+            <a href="../blog.html" class="blog-post-back"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Srivathsan Badrinarayanan</h3>
+                    <p>Engineer, Researcher</p>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#education">Education</a>
+                    <a href="../index.html#experience">Experience</a>
+                    <a href="../index.html#research">Research</a>
+                    <a href="../projects.html">Work</a>
+                    <a href="../blog.html">Blog</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:srivathsanb14@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/srivathsan-badrinarayanan" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/srivathsanb14" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=0rwC4GQAAAAJ" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Srivathsan Badrinarayanan | Made with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinksEl = document.getElementById('nav-links');
+        if (navToggle && navLinksEl) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = navLinksEl.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', isOpen);
+            });
+            navLinksEl.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinksEl.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        const navbar = document.querySelector('.main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

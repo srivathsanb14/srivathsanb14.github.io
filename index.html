@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Srivathsan Badrinarayanan - AI Engineer & Researcher at Carnegie Mellon University. Published in Nature Machine Intelligence and ACS JCIM. Multimodal learning, GNNs, and LLMs for science and product.">
+    <title>Srivathsan Badrinarayanan | AI Engineer & Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo"><span class="logo-text">SB</span></a>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="projects.html" class="nav-link">Work</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </div>
+            <a href="Srivathsan_Badrinarayanan_Resume.pdf" target="_blank" class="nav-resume-btn">
+                <i class="fas fa-file-alt"></i> Resume
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background" id="hero-bg">
+            <div class="orb-wrapper" id="orb-1"><div class="gradient-orb orb-1"></div></div>
+            <div class="orb-wrapper" id="orb-2"><div class="gradient-orb orb-2"></div></div>
+            <div class="orb-wrapper" id="orb-3"><div class="gradient-orb orb-3"></div></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img src="utils/image.jpg" alt="Srivathsan Badrinarayanan" class="hero-image">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+            <div class="hero-text">
+                <div class="hero-credential-pills">
+                    <span class="pill">Nature Machine Intelligence</span>
+                    <span class="pill">5+ Papers</span>
+                    <span class="pill">CMU M.S. AI Engineering '24</span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-line">Srivathsan</span>
+                    <span class="name-line">Badrinarayanan</span>
+                </h1>
+                <p class="hero-punch">
+                    Science and product. Research that publishes, systems that ship.
+                </p>
+                <div class="hero-cta">
+                    <a href="projects.html" class="btn btn-primary">
+                        <span>See My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="mailto:srivathsanb14@gmail.com" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="mailto:srivathsanb14@gmail.com" target="_blank" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/srivathsan-badrinarayanan" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/srivathsanb14" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=0rwC4GQAAAAJ" target="_blank" class="social-link" aria-label="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky CTA (appears on scroll) -->
+    <div class="sticky-cta" id="sticky-cta">
+        <div class="sticky-cta-inner">
+            <span class="sticky-cta-text">Let's build something.</span>
+            <a href="mailto:srivathsanb14@gmail.com" class="btn btn-primary btn-sm">Get in touch</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About</span>
+                <h2 class="section-title">Science and product, one pipeline</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text">
+                        I build systems that accelerate scientific discovery and power products. Multimodal learning, GNNs, LLMs. Published in Nature Machine Intelligence and ACS JCIM. Production systems that cut costs and unlock capabilities.
+                    </p>
+                    <p>
+                        I'm an M.S. graduate in AI Engineering from Carnegie Mellon University, where I worked as a Graduate Research Assistant in the Mechanical and AI Lab (MAIL), publishing AI4Science research and shipping generative AI pipelines used well beyond the lab. Before CMU, I studied Chemical Engineering at IIT Madras and worked on real-time process optimization and computer-vision pipelines in industry.
+                    </p>
+                    <p>
+                        What ties the work together is a bias toward finishing: papers that get published, libraries that get released, and models that get deployed rather than left as notebooks. I care as much about clean evaluation and reproducibility as I do about the elegance of an architecture.
+                    </p>
+                    <div class="about-stats" id="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5" data-suffix="+">0</div>
+                            <div class="stat-label">Published Papers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="6" data-suffix="+">0</div>
+                            <div class="stat-label">Research Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10" data-suffix="+">0</div>
+                            <div class="stat-label">Undergrads Mentored</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number stat-number-text">4.0</div>
+                            <div class="stat-label">CMU GPA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Education</span>
+                <h2 class="section-title">Academic background</h2>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-content">
+                        <div class="edu-school">Carnegie Mellon University</div>
+                        <div class="edu-degree">M.S. in Artificial Intelligence Engineering — Chemical Engineering</div>
+                        <div class="edu-meta">Pittsburgh, PA &nbsp;·&nbsp; GPA: 4.0 &nbsp;·&nbsp; Dec 2024</div>
+                        <div class="edu-detail">Relevant coursework: Generative AI, Large Language Models, Deep Learning, Trustworthy AI.</div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-content">
+                        <div class="edu-school">Indian Institute of Technology Madras</div>
+                        <div class="edu-degree">B.Tech in Chemical Engineering, Minor in Bioprocess Engineering</div>
+                        <div class="edu-meta">Chennai, India &nbsp;·&nbsp; Jul 2023</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Experience</span>
+                <h2 class="section-title">Where I've worked</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-flask"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">May 2024 — Present</span>
+                        <h3>Graduate Research Assistant</h3>
+                        <div class="timeline-org">Mechanical and AI Lab (MAIL), Carnegie Mellon University</div>
+                        <ul>
+                            <li>Leading AI-driven research producing high-impact publications in AI4Science.</li>
+                            <li>Built a prompt-to-audio generative AI pipeline combining LLMs with text-to-speech models, enhancing public knowledge accessibility through automated podcast creation.</li>
+                            <li>Leading a cross-functional team building a PDF-to-lecture-video automated ML pipeline for universities and educators, cutting content prep time significantly.</li>
+                            <li>Mentored 10 undergraduates, advancing their expertise in AI-protein research.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-chart-line"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">May 2022 — Aug 2022</span>
+                        <h3>MITACS Research Intern</h3>
+                        <div class="timeline-org">University of Alberta</div>
+                        <ul>
+                            <li>Developed deep multivariate models with 97% accuracy to predict process outputs in a hydro-processing plant.</li>
+                            <li>Used time-series models on real-time refinery data to optimize parameters and improve operational efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-eye"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Jun 2021 — Jul 2021</span>
+                        <h3>ML Intern</h3>
+                        <div class="timeline-org">Tirios AI</div>
+                        <ul>
+                            <li>Engineered an ML pipeline for object recognition, deployed on AWS SageMaker.</li>
+                            <li>Identified home appliances needing repair from photos, reducing service wait time by half.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications & Research Section -->
+    <section id="research" class="section publications-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Research</span>
+                <h2 class="section-title">Publications</h2>
+                <p class="section-subtitle">Peer-reviewed work at the intersection of multimodal learning and molecular science.</p>
+            </div>
+            <div class="pub-list">
+                <div class="pub-card">
+                    <div class="pub-icon"><i class="fas fa-dna"></i></div>
+                    <div>
+                        <span class="pub-venue">ACS JCIM</span>
+                        <h3>Multi-Peptide: Multimodality Leveraged Language-Graph Learning of Peptide Properties</h3>
+                        <p class="pub-authors">S. Badrinarayanan et al. &nbsp;·&nbsp; arXiv:2407.03380</p>
+                        <p class="pub-desc">A multimodal model for peptide property prediction with applications in drug development and bioinformatics. Achieves state-of-the-art results using a contrastive learning framework (CLIP-style) between protein sequence transformers and AlphaFold-generated structures (GNNs).</p>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.48550/arXiv.2407.03380" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
+                            <a href="https://github.com/srivathsanb14/MultiPeptide" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pub-card">
+                    <div class="pub-icon"><i class="fas fa-atom"></i></div>
+                    <div>
+                        <span class="pub-venue">Nature Machine Intelligence</span>
+                        <h3>Multimodal Language and Graph Learning of Adsorption Configuration in Catalysis</h3>
+                        <p class="pub-authors">J. Ock, S. Badrinarayanan et al.</p>
+                        <p class="pub-desc">A generative-predictive pipeline that predicts adsorption energies without atomic spatial coordinates. A transferable model integrating LLMs with graph-assisted multimodal pretraining reduces MAE by ~10%, improving adsorption energy prediction for catalyst screening.</p>
+                        <div class="pub-links">
+                            <a href="https://www.nature.com/articles/s42256-024-00930-7" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
+                            <a href="https://github.com/hoon-ock/multi-view" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="research-subheading">Current Research</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder"><i class="fas fa-cubes"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MOFGPT <span style="font-weight:500;color:var(--text-muted);font-size:0.8em;">(ongoing)</span></h3>
+                        <p>A GPT-2-based generative model with policy gradients to design novel, viable Metal-Organic Frameworks (MOFs) for gas storage, separation, and catalysis.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder"><i class="fas fa-pills"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Agent for Drug Discovery <span style="font-weight:500;color:var(--text-muted);font-size:0.8em;">(ongoing)</span></h3>
+                        <p>An autonomous pipeline pairing generative models with verifiers to accelerate de novo drug design and molecular optimization through agentic decision-making.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder"><i class="fas fa-images"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Character-Consistent Diffusion for Visual Storylines</h3>
+                        <p>Character-consistent diffusion models integrating Prompt-to-Prompt techniques, caption-based dynamic conditioning, and latent space alignment for coherent sequential storylines.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder"><i class="fas fa-cube"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>THALA - Thermodynamics Helper Library</h3>
+                        <p>Production Python library for thermodynamic analysis. End-to-end workflows, version control, and package deployment.</p>
+                        <div class="project-footer">
+                            <a href="https://github.com/srivathsanb14/thermo_package" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Work</span>
+                <h2 class="section-title">Products &amp; systems</h2>
+                <p class="section-subtitle">Production ML that shipped — not just research prototypes.</p>
+            </div>
+            <!-- Product Projects -->
+            <div class="project-category-wrapper">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder">
+                                <i class="fas fa-podcast"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Content Pipeline</h3>
+                            <p>LLM + TTS pipeline for automated podcasts. Live on Spotify.</p>
+                            <div class="project-footer">
+                                <a href="https://open.spotify.com/show/2Ky5djpjw6UFIcw5wxUS1S" target="_blank" class="project-link">
+                                    <i class="fab fa-spotify"></i> Live Product
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder">
+                                <i class="fas fa-video"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Automated Content Creation Platform</h3>
+                            <p>PDF → lecture video pipeline. ~80% faster content creation.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Industrial Process Optimization System</h3>
+                            <p>Production ML for refinery optimization. Real-world deployment, measurable ROI.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Production ML Pipeline on AWS</h3>
+                            <p>Object recognition pipeline on AWS SageMaker. 50% latency reduction, real-time inference.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="projects.html" class="btn btn-secondary">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Skills</span>
+                <h2 class="section-title">Toolbox</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>ML & Deep Learning</h3>
+                    <p>Transformers, GNNs, and diffusion models for production and research.</p>
+                    <div class="skill-tech">
+                        <span>PyTorch</span>
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                        <span>HuggingFace</span>
+                        <span>Diffusers</span>
+                        <span>scikit-learn</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Chem & Bioinformatics</h3>
+                    <p>Molecular representation, structure prediction, and analysis tooling.</p>
+                    <div class="skill-tech">
+                        <span>RDKit</span>
+                        <span>ASE</span>
+                        <span>AlphaFold</span>
+                        <span>Biopython</span>
+                        <span>PyMOL</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>Deploying and scaling ML systems in production environments.</p>
+                    <div class="skill-tech">
+                        <span>AWS</span>
+                        <span>GCP</span>
+                        <span>Docker</span>
+                        <span>CUDA</span>
+                        <span>PostgreSQL</span>
+                        <span>Kafka</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming & Data</h3>
+                    <p>Core languages and data tooling for pipelines and analytics.</p>
+                    <div class="skill-tech">
+                        <span>Python</span>
+                        <span>C++</span>
+                        <span>MATLAB</span>
+                        <span>R</span>
+                        <span>Pandas</span>
+                        <span>Spark</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Teaser Section -->
+    <section id="writing" class="section blog-teaser-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Writing</span>
+                <h2 class="section-title">From the blog</h2>
+                <p class="section-subtitle">Notes on protein AI, catalysis, and the tools behind them.</p>
+            </div>
+            <div class="blog-cards-grid">
+                <div class="blog-card-modern">
+                    <div class="blog-card-icon"><i class="fas fa-dna"></i></div>
+                    <span class="blog-card-tag">Protein AI</span>
+                    <h3>Understanding the Protein Structure Prediction Problem</h3>
+                    <p>How we approached the protein structure prediction problem, from first principles to modern approaches.</p>
+                    <a href="blog-posts/protein-ai-blog1.html" class="blog-card-link">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="blog-card-modern">
+                    <div class="blog-card-icon"><i class="fas fa-project-diagram"></i></div>
+                    <span class="blog-card-tag">Protein AI</span>
+                    <h3>Decoding Proteins</h3>
+                    <p>Transformers, GNNs, and multimodal models in protein science — how they fit together.</p>
+                    <a href="blog-posts/protein-ai-blog2.html" class="blog-card-link">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="blog-card-modern">
+                    <div class="blog-card-icon"><i class="fas fa-seedling"></i></div>
+                    <span class="blog-card-tag">Protein AI</span>
+                    <h3>The Potential of Protein Models</h3>
+                    <p>A journey towards a dynamic, interpretive, and transformative future for protein modeling.</p>
+                    <a href="blog-posts/protein-ai-blog3.html" class="blog-card-link">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="blog.html" class="btn btn-secondary">
+                    <span>View All Posts</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Srivathsan Badrinarayanan</h3>
+                    <p>Engineer, Researcher</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#research">Research</a>
+                    <a href="projects.html">Work</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:srivathsanb14@gmail.com" target="_blank" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/srivathsan-badrinarayanan" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/srivathsanb14" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=0rwC4GQAAAAJ" target="_blank" aria-label="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Srivathsan Badrinarayanan | Made with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinksEl = document.getElementById('nav-links');
+        if (navToggle && navLinksEl) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = navLinksEl.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', isOpen);
+            });
+            navLinksEl.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinksEl.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        let lastScroll = 0;
+        const navbar = document.querySelector('.main-nav');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Active nav link highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.project-card, .skill-card, .about-content, .edu-card, .timeline-item, .pub-card, .blog-card-modern').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Sticky CTA: show after scrolling past hero
+        const stickyCta = document.getElementById('sticky-cta');
+        if (stickyCta) {
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 400) {
+                    stickyCta.classList.add('visible');
+                } else {
+                    stickyCta.classList.remove('visible');
+                }
+            });
+        }
+
+        // Mouse parallax on hero orbs (subtle, modern)
+        const hero = document.getElementById('home');
+        const orb1 = document.getElementById('orb-1');
+        const orb2 = document.getElementById('orb-2');
+        const orb3 = document.getElementById('orb-3');
+        if (hero && orb1 && orb2 && orb3 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            hero.addEventListener('mousemove', (e) => {
+                const rect = hero.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                const move = (el, factor) => {
+                    const dx = x * factor;
+                    const dy = y * factor;
+                    el.style.transform = `translate(${dx}px, ${dy}px)`;
+                };
+                move(orb1, 30);
+                move(orb2, -25);
+                move(orb3, 20);
+            });
+            hero.addEventListener('mouseleave', () => {
+                [orb1, orb2, orb3].forEach(el => { el.style.transform = ''; });
+            });
+        }
+
+        // Count-up stats when in view
+        const statsSection = document.getElementById('about-stats');
+        const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+        if (statsSection && statNumbers.length) {
+            const countObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    const el = entry.target;
+                    const target = parseInt(el.dataset.target, 10);
+                    const suffix = el.dataset.suffix || '';
+                    const duration = 1200;
+                    const start = performance.now();
+                    function update(now) {
+                        const t = Math.min((now - start) / duration, 1);
+                        const ease = 1 - Math.pow(1 - t, 3);
+                        const n = Math.round(ease * target);
+                        el.textContent = n + suffix;
+                        if (t < 1) requestAnimationFrame(update);
+                    }
+                    requestAnimationFrame(update);
+                    countObserver.unobserve(el);
+                });
+            }, { threshold: 0.3 });
+            statNumbers.forEach(el => countObserver.observe(el));
+        }
+    </script>
+</body>
+</html>
