@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects by Srivathsan Badrinarayanan - AI4Science research and production ML systems.">
-    <title>Projects | Srivathsan Badrinarayanan</title>
+    <meta name="description" content="Research and products by Srivathsan Badrinarayanan — Nature MI, ACS JCIM, agentic protein pipelines, and 0→1 GenAI systems.">
+    <title>Work | Srivathsan Badrinarayanan</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="main-nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo"><span class="logo-text">SB</span></a>
@@ -35,125 +34,136 @@
         </div>
     </nav>
 
-    <!-- Page Hero -->
     <header class="page-hero">
         <span class="section-label">Portfolio</span>
-        <h1>Projects</h1>
-        <p>Research prototypes, production systems, and everything in between.</p>
+        <h1>What I've built</h1>
+        <p>Published research, production agents, and 0→1 products — the full picture.</p>
         <a href="index.html" class="back-home-link"><i class="fas fa-arrow-left"></i> Back to home</a>
     </header>
 
     <main>
-        <!-- Science / Research Projects -->
         <section class="section projects-section">
             <div class="container">
                 <div class="project-category-wrapper">
                     <div class="category-label">
                         <i class="fas fa-flask"></i>
-                        <span>Science</span>
+                        <span>Published Research</span>
                     </div>
                     <div class="projects-grid">
                         <div class="project-card featured">
-                            <div class="project-badge">ACS JCIM</div>
+                            <div class="project-badge">Nature MI · 2024</div>
                             <div class="project-image-wrapper">
-                                <img src="utils/multi-peptide.png" alt="Multi-Peptide Project" class="project-image">
-                                <div class="project-overlay">
-                                    <a href="https://doi.org/10.48550/arXiv.2407.03380" target="_blank" class="project-link-icon">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3>Multi-Peptide: Multimodality Leveraged Language-Graph Learning of Peptide Properties</h3>
-                                <p>A multimodal deep learning model for peptide property prediction, combining sequence and structural data via contrastive learning. State-of-the-art results, published in ACS JCIM.</p>
-                                <div class="project-footer">
-                                    <a href="https://doi.org/10.48550/arXiv.2407.03380" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
-                                    <a href="https://github.com/srivathsanb14/MultiPeptide" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card featured">
-                            <div class="project-badge">Nature Machine Intelligence</div>
-                            <div class="project-image-wrapper">
-                                <img src="utils/multi-view.jpg" alt="Adsorption Configuration Project" class="project-image">
-                                <div class="project-overlay">
-                                    <a href="https://www.nature.com/articles/s42256-024-00930-7" target="_blank" class="project-link-icon">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                                <img src="utils/multi-view.jpg" alt="Multimodal Catalysis" class="project-image">
                             </div>
                             <div class="project-content">
                                 <h3>Multimodal Language and Graph Learning of Adsorption Configuration in Catalysis</h3>
-                                <p>A generative-predictive pipeline for adsorption energy prediction, combining LLMs and graph-based multimodal learning. Published in Nature Machine Intelligence.</p>
+                                <p>LLM + contrastive transformer-GNN pipeline. 10% MAE improvement without crystal-structure data.</p>
                                 <div class="project-footer">
-                                    <a href="https://www.nature.com/articles/s42256-024-00930-7" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
+                                    <a href="https://doi.org/10.1038/s42256-024-00930-7" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
                                     <a href="https://github.com/hoon-ock/multi-view" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="project-card featured">
+                            <div class="project-badge">ACS JCIM · 2024</div>
+                            <div class="project-image-wrapper">
+                                <img src="utils/multi-peptide.png" alt="Multi-Peptide" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3>Multi-Peptide: Language-Graph Learning of Peptide Properties</h3>
+                                <p>Multimodal peptide predictor on 19K+ peptides. 5% accuracy gain over SOTA.</p>
+                                <div class="project-footer">
+                                    <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.4c01443" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
+                                    <a href="https://github.com/srivathsanb14/MultiPeptide" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="project-card">
+                            <div class="project-badge">ACS JCIM · 2025</div>
                             <div class="project-image-wrapper">
                                 <div class="project-placeholder"><i class="fas fa-cubes"></i></div>
                             </div>
                             <div class="project-content">
-                                <h3>MOFGPT <span style="font-weight:500;color:var(--text-muted);font-size:0.8em;">(ongoing)</span></h3>
-                                <p>A GPT-2-based generative model with policy gradients to design novel, viable Metal-Organic Frameworks (MOFs) for gas storage, separation, and catalysis.</p>
+                                <h3>MOFGPT: Generative Design of Metal-Organic Frameworks</h3>
+                                <p>PPO-driven GPT-2 for de novo MOF design. 150+ viable candidates/hr, 97th-percentile sampling efficiency.</p>
+                                <div class="project-footer">
+                                    <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.5c01625" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="project-card">
+                            <div class="project-badge">JCIM · 2026</div>
                             <div class="project-image-wrapper">
                                 <div class="project-placeholder"><i class="fas fa-pills"></i></div>
                             </div>
                             <div class="project-content">
-                                <h3>AI Agent for Drug Discovery <span style="font-weight:500;color:var(--text-muted);font-size:0.8em;">(ongoing)</span></h3>
-                                <p>An autonomous pipeline pairing generative models with verifiers to accelerate de novo drug design and molecular optimization.</p>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-image-wrapper">
-                                <div class="project-placeholder"><i class="fas fa-images"></i></div>
-                            </div>
-                            <div class="project-content">
-                                <h3>Character-Consistent Diffusion for Visual Storylines</h3>
-                                <p>Character-consistent diffusion models integrating Prompt-to-Prompt techniques, caption-based dynamic conditioning, and latent space alignment for coherent sequential storylines.</p>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-image-wrapper">
-                                <div class="project-placeholder"><i class="fas fa-cube"></i></div>
-                            </div>
-                            <div class="project-content">
-                                <h3>THALA - Thermodynamics Helper Library</h3>
-                                <p>Production Python library for thermodynamic analysis, with end-to-end workflows and version control.</p>
+                                <h3>LLM Agent for Modular Drug Discovery</h3>
+                                <p>End-to-end agentic pipeline — LLMs, RAG, property models, automated feedback loops.</p>
                                 <div class="project-footer">
-                                    <a href="https://github.com/srivathsanb14/thermo_package" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                    <a href="https://doi.org/10.1021/acs.jcim.5c02454" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-badge">ML: Sci &amp; Tech · 2025</div>
+                            <div class="project-image-wrapper">
+                                <div class="project-placeholder"><i class="fas fa-industry"></i></div>
+                            </div>
+                            <div class="project-content">
+                                <h3>LLM-guided Chemical Process Optimization</h3>
+                                <p>Multi-agent approach to chemical process optimization with LLM coordination.</p>
+                                <div class="project-footer">
+                                    <a href="https://iopscience.iop.org/article/10.1088/2632-2153/ae2382" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-badge">Preprint · 2025</div>
+                            <div class="project-image-wrapper">
+                                <div class="project-placeholder"><i class="fas fa-dna"></i></div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Meta-Learning for Protein Mutation Prediction</h3>
+                                <p>Few-shot generalization across mutation tasks. +30% over strong baselines.</p>
+                                <div class="project-footer">
+                                    <a href="https://arxiv.org/abs/2510.20943" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> arXiv</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product Projects -->
                 <div class="project-category-wrapper">
                     <div class="category-label">
                         <i class="fas fa-rocket"></i>
-                        <span>Product</span>
+                        <span>Industry &amp; Products</span>
                     </div>
                     <div class="projects-grid">
+                        <div class="project-card featured">
+                            <div class="project-badge">Bay Area · 2025</div>
+                            <div class="project-image-wrapper">
+                                <div class="project-placeholder"><i class="fas fa-dna"></i></div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Aikium Multi-Agent Protein Pipeline</h3>
+                                <p>10→100+ candidates/day. Model zoo with 15+ workflows. LangChain interface for wet-lab scientists.</p>
+                            </div>
+                        </div>
+
                         <div class="project-card">
                             <div class="project-image-wrapper">
                                 <div class="project-placeholder"><i class="fas fa-podcast"></i></div>
                             </div>
                             <div class="project-content">
-                                <h3>Content Pipeline</h3>
-                                <p>LLM + TTS pipeline for automated podcasts, enhancing public accessibility to knowledge. Live on Spotify.</p>
+                                <h3>DreamPods</h3>
+                                <p>Founded 11-person CMU team. LLM+TTS pipeline turning science into accessible audio.</p>
                                 <div class="project-footer">
-                                    <a href="https://open.spotify.com/show/2Ky5djpjw6UFIcw5wxUS1S" target="_blank" class="project-link"><i class="fab fa-spotify"></i> Live Product</a>
+                                    <a href="https://open.spotify.com/show/2Ky5djpjw6UFIcw5wxUS1S" target="_blank" class="project-link"><i class="fab fa-spotify"></i> Spotify</a>
                                 </div>
                             </div>
                         </div>
@@ -163,28 +173,28 @@
                                 <div class="project-placeholder"><i class="fas fa-video"></i></div>
                             </div>
                             <div class="project-content">
-                                <h3>Automated Content Creation Platform</h3>
-                                <p>PDF → lecture video pipeline, reducing content preparation time for educators by roughly 80%.</p>
+                                <h3>GenAI Education Platform</h3>
+                                <p>PDF → lecture video pipeline. Multimodal LLMs for automated STEM content creation.</p>
                             </div>
                         </div>
 
                         <div class="project-card">
                             <div class="project-image-wrapper">
-                                <div class="project-placeholder"><i class="fas fa-industry"></i></div>
+                                <div class="project-placeholder"><i class="fas fa-images"></i></div>
                             </div>
                             <div class="project-content">
-                                <h3>Data-Driven Refinery Process Optimization</h3>
-                                <p>Multivariate deep learning models optimizing refinery operations for improved profitability and efficiency.</p>
+                                <h3>Character-Consistent Diffusion</h3>
+                                <p>CMU Generative AI course — Best Poster Award. Coherent visual storylines via latent alignment.</p>
                             </div>
                         </div>
 
                         <div class="project-card">
                             <div class="project-image-wrapper">
-                                <div class="project-placeholder"><i class="fas fa-eye"></i></div>
+                                <div class="project-placeholder"><i class="fas fa-chart-line"></i></div>
                             </div>
                             <div class="project-content">
-                                <h3>Production ML Pipeline on AWS</h3>
-                                <p>Object recognition pipeline deployed on AWS SageMaker, reducing service wait times by half.</p>
+                                <h3>Refinery Process Optimization</h3>
+                                <p>MITACS @ UAlberta. LSTM/Neural CDE surrogates — 97% accuracy on real-time plant data.</p>
                             </div>
                         </div>
                     </div>
@@ -193,13 +203,12 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3>Srivathsan Badrinarayanan</h3>
-                    <p>Engineer, Researcher</p>
+                    <p>Ph.D. Researcher · Founding Engineer</p>
                 </div>
                 <div class="footer-links">
                     <a href="index.html#about">About</a>
@@ -238,7 +247,6 @@
             });
         }
 
-        // Navbar scroll effect
         const navbar = document.querySelector('.main-nav');
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 100) {
@@ -248,7 +256,6 @@
             }
         });
 
-        // Intersection Observer for animations
         const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -80px 0px' };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
