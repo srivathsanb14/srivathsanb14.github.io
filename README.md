@@ -21,4 +21,15 @@ Personal portfolio site for experience, research, projects, and blog posts.
     images/
   blog-posts/
   Srivathsan_Badrinarayanan_Resume.pdf
+  Srivathsan_Badrinarayanan_Resume.tex
 ```
+
+## Resume
+
+Edit `Srivathsan_Badrinarayanan_Resume.tex` (research-focused trim of the master CV), then compile:
+
+```bash
+pdflatex Srivathsan_Badrinarayanan_Resume.tex
+```
+
+The PDF is linked from the site navigation.

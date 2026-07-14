@@ -107,10 +107,10 @@
             initSmoothScroll();
             initStickyCta();
             initHeroParallax();
-            initScrollAnimations('.skill-card, .about-content, .edu-card, .work-preview-card, .blog-card-modern');
+            initScrollAnimations('.skill-card, .about-content, .edu-card, .work-preview-card, .blog-card-modern, .recognition-item');
         } else if (page === 'work') {
             initSmoothScroll();
-            initScrollAnimations('.project-card, .pub-card, .timeline-item');
+            initScrollAnimations('.project-card, .pub-card, .timeline-item, .recognition-item');
         } else {
             initScrollAnimations('.project-card, .pub-card, .timeline-item, .blog-card-modern, .edu-card, .skill-card');
         }
