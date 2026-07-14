@@ -1330,6 +1330,10 @@ body {
     .blog-cards-grid {
         grid-template-columns: 1fr;
     }
+
+    .recognition-grid {
+        grid-template-columns: 1fr;
+    }
     
     .hero-image-wrapper {
         width: 250px;
@@ -1415,6 +1419,7 @@ body {
     .timeline-item,
     .pub-card,
     .blog-card-modern,
+    .recognition-card,
     .stat-item,
     .back-to-top,
     .venue-ticker-track {
@@ -1717,66 +1722,96 @@ body {
 
 /* ===== RECOGNITION SECTION ===== */
 .recognition-section {
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
 }
 
 .recognition-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.recognition-item {
+.recognition-card {
     display: flex;
-    gap: var(--spacing-md);
+    flex-direction: column;
     align-items: flex-start;
     background: var(--bg-card);
     border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: var(--radius-xl);
     padding: var(--spacing-lg);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-lg);
+    min-height: 100%;
     opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, border-color 0.3s ease;
 }
 
-.recognition-item.animate-in {
+.recognition-card.animate-in {
     opacity: 1;
     transform: translateY(0);
 }
 
-.recognition-item:hover {
-    box-shadow: var(--shadow-lg);
-    border-color: rgba(201, 168, 108, 0.25);
+.recognition-grid .recognition-card:nth-child(1).animate-in { transition-delay: 0.05s; }
+.recognition-grid .recognition-card:nth-child(2).animate-in { transition-delay: 0.1s; }
+.recognition-grid .recognition-card:nth-child(3).animate-in { transition-delay: 0.15s; }
+.recognition-grid .recognition-card:nth-child(4).animate-in { transition-delay: 0.2s; }
+
+.recognition-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-2xl), 0 0 40px rgba(201, 169, 98, 0.12);
+    border-color: rgba(201, 169, 108, 0.25);
 }
 
-.recognition-icon {
-    width: 48px;
-    height: 48px;
+.recognition-card-icon {
+    width: 52px;
+    height: 52px;
     border-radius: var(--radius-md);
     background: rgba(201, 169, 98, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary-light);
-    font-size: 1.1rem;
-    flex-shrink: 0;
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
 }
 
-.recognition-item h3 {
-    font-size: 1.05rem;
+.recognition-card-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.recognition-card h3 {
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 0.35rem;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
 }
 
-.recognition-item p {
+.recognition-card p {
     color: var(--text-secondary);
     font-size: 0.92rem;
-    line-height: 1.6;
-    margin: 0;
+    line-height: 1.65;
+    margin: 0 0 var(--spacing-sm);
+    flex-grow: 1;
+}
+
+.recognition-card-year {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    background: rgba(201, 169, 98, 0.12);
+    border-radius: var(--radius-full);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    margin-top: auto;
 }
 
 .pub-card-has-thumb {
