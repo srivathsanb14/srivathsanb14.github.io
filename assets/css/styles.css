@@ -1425,6 +1425,8 @@ body {
     .venue-ticker-track {
         animation: none !important;
         transition-duration: 0.01ms !important;
+        opacity: 1 !important;
+        transform: none !important;
     }
     .name-line {
         background-position: 0% center !important;
@@ -1743,14 +1745,14 @@ body {
     padding: var(--spacing-lg);
     box-shadow: var(--shadow-lg);
     min-height: 100%;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, border-color 0.3s ease;
+    opacity: 1;
+    transform: none;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, border-color 0.3s ease;
 }
 
 .recognition-card.animate-in {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 
 .recognition-grid .recognition-card:nth-child(1).animate-in { transition-delay: 0.05s; }
