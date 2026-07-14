@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Transformers, GNNs, and multimodal models in protein science.">
     <title>Decoding Proteins with AI | Srivathsan Badrinarayanan</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body data-page="blog">
     <nav class="main-nav">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo"><span class="logo-text">SB</span></a>
@@ -20,12 +20,10 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="nav-links" id="nav-links">
-                <a href="../index.html#about" class="nav-link">About</a>
-                <a href="../index.html#education" class="nav-link">Education</a>
-                <a href="../index.html#experience" class="nav-link">Experience</a>
-                <a href="../index.html#research" class="nav-link">Research</a>
-                <a href="../projects.html" class="nav-link">Work</a>
-                <a href="../index.html#skills" class="nav-link">Skills</a>
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../research.html" class="nav-link">Research</a>
+                <a href="../experience.html" class="nav-link">Experience</a>
+                <a href="../projects.html" class="nav-link">Projects</a>
                 <a href="../blog.html" class="nav-link active">Blog</a>
             </div>
             <a href="../Srivathsan_Badrinarayanan_Resume.pdf" target="_blank" class="nav-resume-btn">
@@ -45,16 +43,16 @@
             <h2>Deep Dive into Transformer Models for Proteins</h2>
             <p><a href="https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf" target="_blank">Transformers</a> have become foundational in AI-driven protein science. Originally developed for language processing, transformer architectures can handle sequences by learning complex dependencies between tokens (or words). For protein science, these "tokens" correspond to amino acids, where understanding the relationships between them can reveal significant insights into protein folding and function. Transformers use a self-attention mechanism that allows each amino acid in a sequence to "attend" to others, learning contextual relationships that are essential in understanding a protein's structure.</p>
             <p>Protein sequences may not be human languages, but they exhibit patterns that make them compatible with language-like processing, as seen in the <a href="protein-ai-blog1.html">previous post</a>. Just as words in a sentence follow grammatical rules, amino acids follow specific biochemical and structural rules. Transformer models, such as <a href="https://ieeexplore.ieee.org/document/9477085" target="_blank">ProtBERT</a> and <a href="https://www.science.org/doi/full/10.1126/science.ade2574" target="_blank">ESM-2</a>, are designed to "learn" these rules by training on massive protein sequence databases. ProtBERT and ESM-2 represent specialized transformer models adapted for protein science. ProtBERT, for example, was trained on large-scale protein data and can identify structural patterns across diverse sequences. ESM-2, developed by Meta, leverages an advanced transformer model to predict protein structure with high accuracy, enabling researchers to discover functional insights with minimal experimental validation.</p>
-            <p>By treating amino acids as "tokens," these models can predict how sequences translate into different outputs — either the corresponding 3D conformation, or even the overall protein property. These tasks are critical to applications like drug discovery and understanding disease mechanisms.</p>
+            <p>By treating amino acids as "tokens," these models can predict how sequences translate into different outputs, either the corresponding 3D conformation, or even the overall protein property. These tasks are critical to applications like drug discovery and understanding disease mechanisms.</p>
 
             <h2>Going 3D: Using Graph Neural Networks (GNNs) for Protein Structures</h2>
-            <p>Proteins are inherently three-dimensional, with amino acids positioned in specific spatial arrangements that influence their function. Graph neural networks are ideal for this kind of spatial data. By representing proteins as graphs—where each amino acid is a node and each bond or spatial relationship forms an edge—GNNs capture the essential 3D structure. This approach provides a new level of insight, especially for tasks like binding affinity predictions and protein-ligand interactions.</p>
+            <p>Proteins are inherently three-dimensional, with amino acids positioned in specific spatial arrangements that influence their function. Graph neural networks are ideal for this kind of spatial data. By representing proteins as graphs, where each amino acid is a node and each bond or spatial relationship forms an edge, GNNs capture the essential 3D structure. This approach provides a new level of insight, especially for tasks like binding affinity predictions and protein-ligand interactions.</p>
 
             <figure class="blog-post-figure medium">
                 <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003246688-1/graph-representation-learning-protein-classification-sucheta-dawn-monidipa-das" target="_blank">
                     <img src="protein-ai-blog2/Protein-Graph.png" alt="Graphical Representation of Proteins">
                 </a>
-                <figcaption class="blog-post-caption">Graph Representation Learning for Protein Classification — Sucheta Dawn, Monidipa Das</figcaption>
+                <figcaption class="blog-post-caption">Graph Representation Learning for Protein Classification. Sucheta Dawn, Monidipa Das</figcaption>
             </figure>
 
             <p>In a protein's graph representation, each node corresponds to an amino acid, while edges represent spatial relationships between these amino acids. The graph model need not necessarily be a direct representation of the 3D structure, but may also capture other information like atomic radius, bond length among others. This graphical representation enables the model to understand not just sequence order but also how different amino acids interact spatially. For example, an enzyme's active site may depend on interactions between distant amino acids brought together through folding. By "learning" the spatial connectivity, GNNs can recognize these critical functional sites.</p>
@@ -66,7 +64,7 @@
             <p>GNNs have shown remarkable promise in applications requiring spatial awareness, such as understanding how small molecules (ligands) interact with protein targets. For instance, GNNs have been used to predict how drugs bind to their target proteins, offering insights that are instrumental in drug design. Additionally, GNNs have been applied in structural biology to identify how mutations in proteins impact their function, which is essential for understanding genetic diseases.</p>
 
             <h2>Multimodal Models: Integrating Sequence, Structure, and Function Data</h2>
-            <p>The real breakthrough comes from multimodal models, which integrate various data types — sequence, structure, and functional annotations. By combining sequence data from transformers and spatial data from GNNs, multimodal models create a comprehensive representation of proteins. This integration is particularly valuable for complex tasks like predicting protein function, where both sequence and structural information play a crucial role.</p>
+            <p>The real breakthrough comes from multimodal models, which integrate various data types: sequence, structure, and functional annotations. By combining sequence data from transformers and spatial data from GNNs, multimodal models create a comprehensive representation of proteins. This integration is particularly valuable for complex tasks like predicting protein function, where both sequence and structural information play a crucial role.</p>
             <p>In multimodal models, typically, transformers analyze the protein sequence, while GNNs handle 3D structural data. The model then combines these outputs to predict protein properties with great accuracy. For instance, in drug discovery, understanding both the protein's sequence and its structure is essential for designing effective drug molecules. The integration of both data types provides a holistic view, allowing researchers to model complex interactions at a molecular level. Two of the most impactful techniques within this space are contrastive learning and self-supervised learning (SSL), which enable deeper insights from vast protein datasets.</p>
 
             <h3>Contrastive Learning for Sequence-Structure Matching</h3>
@@ -84,7 +82,7 @@
 
             <h2>Conclusions: Multimodal models for the future of protein science</h2>
             <p>The applications of multimodal AI in protein science are wide-ranging. In drug discovery, multimodal models help predict how a drug will interact with multiple protein targets, improving selectivity and reducing side effects. In synthetic biology, researchers can use these models to design proteins with specific functions, such as enzymes tailored for industrial applications or proteins engineered for therapeutic purposes.</p>
-            <p>The convergence of transformers, GNNs, and multimodal models has redefined protein science, offering new ways to understand the structure-function relationship at molecular and atomic scales. While each model type — transformers, GNNs, and the combined multimodal architectures — offers unique advantages, their combined use has empowered researchers to tackle some of the most complex challenges in biology. As AI in protein science continues to evolve, we can expect further integration of data modalities, moving toward a future where AI not only predicts protein structures but also potentially simulates their interactions in biological systems.</p>
+            <p>The convergence of transformers, GNNs, and multimodal models has redefined protein science, offering new ways to understand the structure-function relationship at molecular and atomic scales. While each model type (transformers, GNNs, and the combined multimodal architectures) offers unique advantages, their combined use has empowered researchers to tackle some of the most complex challenges in biology. As AI in protein science continues to evolve, we can expect further integration of data modalities, moving toward a future where AI not only predicts protein structures but also potentially simulates their interactions in biological systems.</p>
 
             <a href="../blog.html" class="blog-post-back"><i class="fas fa-arrow-left"></i> Back to Blog</a>
         </article>
@@ -98,11 +96,10 @@
                     <p>Engineer, Researcher</p>
                 </div>
                 <div class="footer-links">
-                    <a href="../index.html#about">About</a>
-                    <a href="../index.html#education">Education</a>
-                    <a href="../index.html#experience">Experience</a>
-                    <a href="../index.html#research">Research</a>
-                    <a href="../projects.html">Work</a>
+                    <a href="../index.html">Home</a>
+                    <a href="../research.html">Research</a>
+                    <a href="../experience.html">Experience</a>
+                    <a href="../projects.html">Projects</a>
                     <a href="../blog.html">Blog</a>
                 </div>
                 <div class="footer-social">
@@ -118,30 +115,6 @@
         </div>
     </footer>
 
-    <script>
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinksEl = document.getElementById('nav-links');
-        if (navToggle && navLinksEl) {
-            navToggle.addEventListener('click', () => {
-                const isOpen = navLinksEl.classList.toggle('open');
-                navToggle.setAttribute('aria-expanded', isOpen);
-            });
-            navLinksEl.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinksEl.classList.remove('open');
-                    navToggle.setAttribute('aria-expanded', 'false');
-                });
-            });
-        }
-
-        const navbar = document.querySelector('.main-nav');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 100) {
-                navbar.classList.add('nav-scrolled');
-            } else {
-                navbar.classList.remove('nav-scrolled');
-            }
-        });
-    </script>
+    <script src="../assets/js/site.js"></script>
 </body>
 </html>

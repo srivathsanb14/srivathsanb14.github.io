@@ -6,7 +6,7 @@
 }
 
 :root {
-    /* Warm academic palette — deep charcoal, gold, sage */
+    /* Warm academic palette: deep charcoal, gold, sage */
     --primary: #c9a962;
     --primary-dark: #a68b45;
     --primary-light: #e8d5a3;
@@ -823,42 +823,6 @@ body {
     margin-bottom: var(--spacing-sm);
 }
 
-.about-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: var(--spacing-sm);
-    margin-top: var(--spacing-md);
-}
-
-.stat-item {
-    text-align: center;
-    padding: var(--spacing-sm);
-    background: var(--bg-card);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.stat-item:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-}
-
-.stat-number {
-    font-size: 2.25rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--primary-light), var(--primary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 0.25rem;
-}
-
-.stat-label {
-    color: var(--text-secondary);
-    font-weight: 500;
-}
 
 /* ===== RESEARCH SECTION ===== */
 .research-section {
@@ -1365,10 +1329,6 @@ body {
     .education-grid,
     .blog-cards-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .about-stats {
-        grid-template-columns: repeat(2, 1fr);
     }
     
     .hero-image-wrapper {

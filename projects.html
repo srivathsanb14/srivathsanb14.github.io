@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Research and projects by Srivathsan Badrinarayanan — AI4Science, multimodal molecular learning, publications in Nature MI and ACS JCIM.">
+    <meta name="description" content="Research and projects by Srivathsan Badrinarayanan in AI4Science, multimodal molecular learning, Nature MI and ACS JCIM.">
     <title>Projects | Srivathsan Badrinarayanan</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body data-page="projects">
     <nav class="main-nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo"><span class="logo-text">SB</span></a>
@@ -20,12 +20,10 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="nav-links" id="nav-links">
-                <a href="index.html#about" class="nav-link">About</a>
-                <a href="index.html#education" class="nav-link">Education</a>
-                <a href="index.html#experience" class="nav-link">Experience</a>
-                <a href="index.html#research" class="nav-link">Research</a>
-                <a href="projects.html" class="nav-link active">Work</a>
-                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
                 <a href="blog.html" class="nav-link">Blog</a>
             </div>
             <a href="Srivathsan_Badrinarayanan_Resume.pdf" target="_blank" class="nav-resume-btn">
@@ -53,7 +51,7 @@
                         <div class="project-card featured">
                             <div class="project-badge">Nature MI · 2024</div>
                             <div class="project-image-wrapper">
-                                <img src="utils/multi-view.jpg" alt="Multimodal Catalysis" class="project-image">
+                                <img src="assets/images/multi-view.jpg" alt="Multimodal Catalysis" class="project-image">
                             </div>
                             <div class="project-content">
                                 <h3>Multimodal Language and Graph Learning of Adsorption Configuration in Catalysis</h3>
@@ -68,7 +66,7 @@
                         <div class="project-card featured">
                             <div class="project-badge">ACS JCIM · 2024</div>
                             <div class="project-image-wrapper">
-                                <img src="utils/multi-peptide.png" alt="Multi-Peptide" class="project-image">
+                                <img src="assets/images/multi-peptide.png" alt="Multi-Peptide" class="project-image">
                             </div>
                             <div class="project-content">
                                 <h3>Multi-Peptide: Language-Graph Learning of Peptide Properties</h3>
@@ -101,7 +99,7 @@
                             </div>
                             <div class="project-content">
                                 <h3>LLM Agent for Modular Drug Discovery</h3>
-                                <p>End-to-end agentic pipeline — LLMs, RAG, property models, automated feedback loops.</p>
+                                <p>End-to-end agentic pipeline with LLMs, RAG, property models, and automated feedback loops.</p>
                                 <div class="project-footer">
                                     <a href="https://doi.org/10.1021/acs.jcim.5c02454" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
                                 </div>
@@ -159,7 +157,7 @@
                     </div>
                     <div class="projects-grid">
                         <div class="project-card">
-                            <div class="project-badge">2025 — 2026</div>
+                            <div class="project-badge">2025 to 2026</div>
                             <div class="project-image-wrapper">
                                 <div class="project-placeholder"><i class="fas fa-rocket"></i></div>
                             </div>
@@ -209,7 +207,7 @@
                             </div>
                             <div class="project-content">
                                 <h3>Character-Consistent Diffusion</h3>
-                                <p>CMU Generative AI course — Best Poster Award. Coherent visual storylines via latent alignment.</p>
+                                <p>CMU Generative AI course, Best Poster Award. Coherent visual storylines via latent alignment.</p>
                             </div>
                         </div>
 
@@ -219,7 +217,7 @@
                             </div>
                             <div class="project-content">
                                 <h3>Refinery Process Optimization</h3>
-                                <p>MITACS @ UAlberta. LSTM/Neural CDE surrogates — 97% accuracy on real-time plant data.</p>
+                                <p>MITACS @ UAlberta. LSTM/Neural CDE surrogates with 97% accuracy on real-time plant data.</p>
                             </div>
                         </div>
                     </div>
@@ -236,11 +234,10 @@
                     <p>Incoming Ph.D. · CMU MAIL Lab</p>
                 </div>
                 <div class="footer-links">
-                    <a href="index.html#about">About</a>
-                    <a href="index.html#education">Education</a>
-                    <a href="index.html#experience">Experience</a>
-                    <a href="index.html#research">Research</a>
-                    <a href="projects.html">Work</a>
+                    <a href="index.html">Home</a>
+                    <a href="research.html">Research</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="projects.html">Projects</a>
                     <a href="blog.html">Blog</a>
                 </div>
                 <div class="footer-social">
@@ -256,38 +253,10 @@
         </div>
     </footer>
 
-    <script>
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinksEl = document.getElementById('nav-links');
-        if (navToggle && navLinksEl) {
-            navToggle.addEventListener('click', () => {
-                const isOpen = navLinksEl.classList.toggle('open');
-                navToggle.setAttribute('aria-expanded', isOpen);
-            });
-            navLinksEl.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinksEl.classList.remove('open');
-                    navToggle.setAttribute('aria-expanded', 'false');
-                });
-            });
-        }
+    <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
-        const navbar = document.querySelector('.main-nav');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 100) {
-                navbar.classList.add('nav-scrolled');
-            } else {
-                navbar.classList.remove('nav-scrolled');
-            }
-        });
-
-        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -80px 0px' };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('animate-in');
-            });
-        }, observerOptions);
-        document.querySelectorAll('.project-card').forEach(el => observer.observe(el));
-    </script>
+    <script src="assets/js/site.js"></script>
 </body>
 </html>

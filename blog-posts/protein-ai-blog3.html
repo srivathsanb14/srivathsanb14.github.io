@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The future of protein AI: dynamic modeling, interpretability, and personalized medicine.">
     <title>The Potential of Protein Models | Srivathsan Badrinarayanan</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body data-page="blog">
     <nav class="main-nav">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo"><span class="logo-text">SB</span></a>
@@ -20,12 +20,10 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="nav-links" id="nav-links">
-                <a href="../index.html#about" class="nav-link">About</a>
-                <a href="../index.html#education" class="nav-link">Education</a>
-                <a href="../index.html#experience" class="nav-link">Experience</a>
-                <a href="../index.html#research" class="nav-link">Research</a>
-                <a href="../projects.html" class="nav-link">Work</a>
-                <a href="../index.html#skills" class="nav-link">Skills</a>
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../research.html" class="nav-link">Research</a>
+                <a href="../experience.html" class="nav-link">Experience</a>
+                <a href="../projects.html" class="nav-link">Projects</a>
                 <a href="../blog.html" class="nav-link active">Blog</a>
             </div>
             <a href="../Srivathsan_Badrinarayanan_Resume.pdf" target="_blank" class="nav-resume-btn">
@@ -51,12 +49,12 @@
             <p>Several powerful techniques are now helping researchers unlock these black-box models:</p>
             <ul>
                 <li><strong>Attention Mechanisms:</strong> Widely used in transformers, attention mechanisms highlight which amino acids or regions in a protein influence the model's predictions. By visualizing these "attention maps," scientists can pinpoint functional sites or active regions, leading to more targeted drug design and a better understanding of molecular interactions.</li>
-                <li><strong><a href="https://arxiv.org/abs/1705.07874" target="_blank">SHAP Values</a> and Feature Attribution:</strong> SHAP values provide a quantitative measure of each feature's impact on predictions. In the context of protein AI, this allows researchers to discern which molecular features—like residues or structural motifs—are driving the model's output, providing deeper insight into the biochemical basis of predictions.</li>
+                <li><strong><a href="https://arxiv.org/abs/1705.07874" target="_blank">SHAP Values</a> and Feature Attribution:</strong> SHAP values provide a quantitative measure of each feature's impact on predictions. In the context of protein AI, this allows researchers to discern which molecular features, like residues or structural motifs, are driving the model's output, providing deeper insight into the biochemical basis of predictions.</li>
             </ul>
             <p>These interpretability tools don't just enhance reliability; they accelerate discovery too! Scientists can now validate and refine predictions with confidence, understanding how models "think" and aligning computational insights with biological intuition. This transparency is key to transforming protein AI from a computational aid into a trusted partner in drug discovery and biotechnological innovation.</p>
 
             <h2>The Transformative Potential of AI in Personalized Medicine</h2>
-            <p>The combination of dynamic modeling and interpretability isn't just advancing science—it's paving the way for advances in personalized, precision <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11051552/" target="_blank">medicine</a>. By modeling proteins dynamically and interpreting AI predictions at a molecular level, scientists aim to develop highly tailored therapies that respond to individual protein behaviors and variations.</p>
+            <p>The combination of dynamic modeling and interpretability isn't just advancing science. It's paving the way for advances in personalized, precision <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11051552/" target="_blank">medicine</a>. By modeling proteins dynamically and interpreting AI predictions at a molecular level, scientists aim to develop highly tailored therapies that respond to individual protein behaviors and variations.</p>
             <p>This new direction is expected to allow researchers to consider a patient's unique molecular profile when designing treatments, leading to drugs that are more effective and with fewer side effects. For example, personalized AI models could predict how specific protein mutations impact drug interactions, helping to customize therapies that minimize adverse reactions and optimize efficacy. With AI, the future of medicine is shifting from a one-size-fits-all approach to one that is adaptive, precise, and deeply personalized.</p>
 
             <h2>Conclusion: The Future of Protein AI – A Collaborative Path Forward</h2>
@@ -75,11 +73,10 @@
                     <p>Engineer, Researcher</p>
                 </div>
                 <div class="footer-links">
-                    <a href="../index.html#about">About</a>
-                    <a href="../index.html#education">Education</a>
-                    <a href="../index.html#experience">Experience</a>
-                    <a href="../index.html#research">Research</a>
-                    <a href="../projects.html">Work</a>
+                    <a href="../index.html">Home</a>
+                    <a href="../research.html">Research</a>
+                    <a href="../experience.html">Experience</a>
+                    <a href="../projects.html">Projects</a>
                     <a href="../blog.html">Blog</a>
                 </div>
                 <div class="footer-social">
@@ -95,30 +92,6 @@
         </div>
     </footer>
 
-    <script>
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinksEl = document.getElementById('nav-links');
-        if (navToggle && navLinksEl) {
-            navToggle.addEventListener('click', () => {
-                const isOpen = navLinksEl.classList.toggle('open');
-                navToggle.setAttribute('aria-expanded', isOpen);
-            });
-            navLinksEl.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinksEl.classList.remove('open');
-                    navToggle.setAttribute('aria-expanded', 'false');
-                });
-            });
-        }
-
-        const navbar = document.querySelector('.main-nav');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 100) {
-                navbar.classList.add('nav-scrolled');
-            } else {
-                navbar.classList.remove('nav-scrolled');
-            }
-        });
-    </script>
+    <script src="../assets/js/site.js"></script>
 </body>
 </html>
