@@ -1344,8 +1344,8 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .pub-card-has-thumb {
-        grid-template-columns: 1fr;
+    .pub-card-has-thumb .pub-thumb {
+        height: 200px;
     }
 
     .pub-thumb {
@@ -1645,14 +1645,14 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: var(--spacing-md);
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, border-color 0.3s ease;
+    opacity: 1;
+    transform: none;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, border-color 0.3s ease;
 }
 
 .pub-card.animate-in {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 
 .pub-card:hover {
@@ -1900,8 +1900,33 @@ body {
 }
 
 .pub-card-has-thumb {
-    grid-template-columns: 140px 1fr;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pub-card-has-thumb .pub-media {
+    width: 100%;
+    flex-shrink: 0;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pub-card-has-thumb .pub-thumb {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center top;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.pub-card-has-thumb .pub-body {
+    padding: var(--spacing-lg);
 }
 
 .pub-thumb {
