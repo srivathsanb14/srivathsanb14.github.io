@@ -107,7 +107,10 @@
             initSmoothScroll();
             initStickyCta();
             initHeroParallax();
-            initScrollAnimations('.skill-card, .about-content, .edu-card, .pub-card, .blog-card-modern, .home-link-card');
+            initScrollAnimations('.skill-card, .about-content, .edu-card, .work-preview-card, .blog-card-modern');
+        } else if (page === 'work') {
+            initSmoothScroll();
+            initScrollAnimations('.project-card, .pub-card, .timeline-item');
         } else {
             initScrollAnimations('.project-card, .pub-card, .timeline-item, .blog-card-modern, .edu-card, .skill-card');
         }

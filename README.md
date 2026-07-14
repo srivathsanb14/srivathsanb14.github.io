@@ -6,17 +6,15 @@ Personal portfolio site for experience, research, projects, and blog posts.
 
 ## Pages
 
-- [Home](index.html): Overview, about, education, skills, and contact
-- [Research](research.html): Publications and preprints
-- [Experience](experience.html): Work history timeline
-- [Projects](projects.html): Research highlights and applied work
+- [Home](index.html): Landing, about, education, skills
+- [Work](work.html): Publications, experience, and projects
 - [Blog](blog.html): Technical writing on protein AI and catalysis
 
 ## Structure
 
 ```
 /
-  index.html, research.html, experience.html, projects.html, blog.html
+  index.html, work.html, blog.html
   assets/
     css/styles.css
     js/site.js

@@ -1794,7 +1794,7 @@ body {
     margin-top: var(--spacing-lg);
 }
 
-/* ===== SUBPAGE HERO (projects.html / blog.html) ===== */
+/* ===== SUBPAGE HERO (work.html / blog.html) ===== */
 .page-hero {
     padding: calc(var(--spacing-xl) + 70px) var(--spacing-md) var(--spacing-lg);
     text-align: center;
@@ -1838,6 +1838,73 @@ body {
 
 .back-home-link:hover {
     transform: translateX(-4px);
+}
+
+.work-subnav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: var(--spacing-md);
+}
+
+.work-subnav-link {
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.work-subnav-link:hover {
+    color: var(--primary-light);
+    border-color: rgba(201, 168, 108, 0.35);
+    transform: translateY(-2px);
+}
+
+.work-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.work-preview-card {
+    display: block;
+    padding: var(--spacing-md);
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.work-preview-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(201, 168, 108, 0.25);
+}
+
+.work-preview-card i {
+    font-size: 1.5rem;
+    color: var(--primary-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.work-preview-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.work-preview-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Legacy styles for other pages */
