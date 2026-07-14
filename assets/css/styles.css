@@ -1724,7 +1724,7 @@ body {
 
 /* ===== RECOGNITION SECTION ===== */
 .recognition-section {
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
 }
 
 .recognition-grid {
@@ -1739,8 +1739,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: var(--bg-card);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: linear-gradient(145deg, var(--bg-card) 0%, rgba(36, 42, 54, 0.85) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--radius-xl);
     padding: var(--spacing-lg);
     box-shadow: var(--shadow-lg);
@@ -1748,6 +1748,19 @@ body {
     opacity: 1;
     transform: none;
     transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.recognition-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--recognition-accent, var(--primary));
+    opacity: 0.85;
 }
 
 .recognition-card.animate-in {
@@ -1762,21 +1775,29 @@ body {
 
 .recognition-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-2xl), 0 0 40px rgba(201, 169, 98, 0.12);
-    border-color: rgba(201, 169, 108, 0.25);
+    box-shadow: var(--shadow-2xl), 0 0 40px var(--recognition-glow, rgba(201, 169, 98, 0.12));
+    border-color: var(--recognition-border-hover, rgba(201, 169, 98, 0.35));
+}
+
+.recognition-card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    width: 100%;
 }
 
 .recognition-card-icon {
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
     border-radius: var(--radius-md);
-    background: rgba(201, 169, 98, 0.15);
+    background: var(--recognition-icon-bg, rgba(201, 169, 98, 0.15));
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-light);
-    font-size: 1.25rem;
-    margin-bottom: var(--spacing-sm);
+    color: var(--recognition-icon-color, var(--primary-light));
+    font-size: 1.15rem;
+    flex-shrink: 0;
 }
 
 .recognition-card-tag {
@@ -1785,8 +1806,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.45px;
-    color: var(--accent);
-    margin-bottom: 0.5rem;
+    color: var(--recognition-tag-color, var(--primary-light));
+    background: var(--recognition-tag-bg, rgba(201, 169, 98, 0.15));
+    padding: 0.3rem 0.8rem;
+    border-radius: var(--radius-full);
 }
 
 .recognition-card h3 {
@@ -1808,12 +1831,72 @@ body {
 .recognition-card-year {
     display: inline-block;
     padding: 0.35rem 0.85rem;
-    background: rgba(201, 169, 98, 0.12);
+    background: var(--recognition-year-bg, rgba(201, 169, 98, 0.12));
     border-radius: var(--radius-full);
     font-size: 0.82rem;
     font-weight: 600;
-    color: var(--primary-light);
+    color: var(--recognition-year-color, var(--primary-light));
     margin-top: auto;
+}
+
+/* Service — sage */
+.recognition-card-service {
+    --recognition-accent: var(--accent);
+    --recognition-glow: rgba(125, 155, 138, 0.15);
+    --recognition-border-hover: rgba(125, 155, 138, 0.4);
+    --recognition-icon-bg: rgba(125, 155, 138, 0.2);
+    --recognition-icon-color: #b5cfc2;
+    --recognition-tag-bg: rgba(125, 155, 138, 0.18);
+    --recognition-tag-color: #b5cfc2;
+    --recognition-year-bg: rgba(125, 155, 138, 0.14);
+    --recognition-year-color: #b5cfc2;
+    border-color: rgba(125, 155, 138, 0.22);
+    background: linear-gradient(145deg, var(--bg-card), rgba(125, 155, 138, 0.06));
+}
+
+/* Scholarship — gold */
+.recognition-card-scholarship {
+    --recognition-accent: var(--primary);
+    --recognition-glow: rgba(201, 169, 98, 0.15);
+    --recognition-border-hover: rgba(201, 169, 98, 0.45);
+    --recognition-icon-bg: rgba(201, 169, 98, 0.2);
+    --recognition-icon-color: var(--primary-light);
+    --recognition-tag-bg: rgba(201, 169, 98, 0.18);
+    --recognition-tag-color: var(--primary-light);
+    --recognition-year-bg: rgba(201, 169, 98, 0.14);
+    --recognition-year-color: var(--primary-light);
+    border-color: rgba(201, 169, 98, 0.28);
+    background: linear-gradient(145deg, var(--bg-card), rgba(201, 169, 98, 0.06));
+}
+
+/* Fellowship — slate blue */
+.recognition-card-fellowship {
+    --recognition-accent: var(--accent-blue);
+    --recognition-glow: rgba(139, 158, 183, 0.15);
+    --recognition-border-hover: rgba(139, 158, 183, 0.45);
+    --recognition-icon-bg: rgba(139, 158, 183, 0.2);
+    --recognition-icon-color: #b8c5d6;
+    --recognition-tag-bg: rgba(139, 158, 183, 0.18);
+    --recognition-tag-color: #b8c5d6;
+    --recognition-year-bg: rgba(139, 158, 183, 0.14);
+    --recognition-year-color: #b8c5d6;
+    border-color: rgba(139, 158, 183, 0.25);
+    background: linear-gradient(145deg, var(--bg-card), rgba(139, 158, 183, 0.06));
+}
+
+/* Award — coral */
+.recognition-card-award {
+    --recognition-accent: var(--accent-pink);
+    --recognition-glow: rgba(212, 114, 106, 0.15);
+    --recognition-border-hover: rgba(212, 114, 106, 0.45);
+    --recognition-icon-bg: rgba(212, 114, 106, 0.2);
+    --recognition-icon-color: #e8a8a3;
+    --recognition-tag-bg: rgba(212, 114, 106, 0.18);
+    --recognition-tag-color: #e8a8a3;
+    --recognition-year-bg: rgba(212, 114, 106, 0.14);
+    --recognition-year-color: #e8a8a3;
+    border-color: rgba(212, 114, 106, 0.25);
+    background: linear-gradient(145deg, var(--bg-card), rgba(212, 114, 106, 0.06));
 }
 
 .pub-card-has-thumb {
