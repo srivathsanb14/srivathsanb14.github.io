@@ -114,24 +114,6 @@
                     <p>
                         My research sits at the intersection of multimodal learning, generative AI, and molecular science — building models that connect protein sequence, structure, and property in data-limited settings.
                     </p>
-                    <div class="about-stats" id="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="5">0</div>
-                            <div class="stat-label">Peer-Reviewed Papers</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="3">0</div>
-                            <div class="stat-label">Journal Venues</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="10" data-suffix="+">0</div>
-                            <div class="stat-label">Researchers Mentored</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number stat-number-text">4.0</div>
-                            <div class="stat-label">CMU M.S. GPA</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -608,32 +590,6 @@
             hero.addEventListener('mouseleave', () => {
                 [orb1, orb2, orb3].forEach(el => { el.style.transform = ''; });
             });
-        }
-
-        // Count-up stats when in view
-        const statsSection = document.getElementById('about-stats');
-        const statNumbers = document.querySelectorAll('.stat-number[data-target]');
-        if (statsSection && statNumbers.length) {
-            const countObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (!entry.isIntersecting) return;
-                    const el = entry.target;
-                    const target = parseInt(el.dataset.target, 10);
-                    const suffix = el.dataset.suffix || '';
-                    const duration = 1200;
-                    const start = performance.now();
-                    function update(now) {
-                        const t = Math.min((now - start) / duration, 1);
-                        const ease = 1 - Math.pow(1 - t, 3);
-                        const n = Math.round(ease * target);
-                        el.textContent = n + suffix;
-                        if (t < 1) requestAnimationFrame(update);
-                    }
-                    requestAnimationFrame(update);
-                    countObserver.unobserve(el);
-                });
-            }, { threshold: 0.3 });
-            statNumbers.forEach(el => countObserver.observe(el));
         }
     </script>
 </body>
