@@ -2,388 +2,194 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Publications, experience, and projects by Srivathsan Badrinarayanan in AI4Science and molecular discovery.">
-    <title>Work | Srivathsan Badrinarayanan</title>
-    <link rel="stylesheet" href="assets/css/styles.css?v=academic1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Publications, research experience, and projects of Srivathsan Badrinarayanan.">
+    <title>Research &amp; Experience | Srivathsan Badrinarayanan</title>
+    <link rel="stylesheet" href="assets/css/styles.css?v=academic2">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body data-page="work">
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">Srivathsan Badrinarayanan</a>
-            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="index.html" class="nav-link">About</a>
-                <a href="work.html" class="nav-link active">Work</a>
-                <a href="blog.html" class="nav-link">Blog</a>
-            </div>
-            <a href="Srivathsan_Badrinarayanan_Resume.pdf" target="_blank" class="nav-resume-btn">
-                <i class="fas fa-file-alt"></i> CV
-            </a>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a href="index.html" class="site-name">Srivathsan Badrinarayanan</a>
+            <nav class="site-nav" aria-label="Main">
+                <a href="index.html">About</a>
+                <a href="work.html" aria-current="page">Research &amp; Experience</a>
+                <a href="Srivathsan_Badrinarayanan_Resume.pdf">CV</a>
+            </nav>
         </div>
-    </nav>
-
-    <header class="page-hero page-hero-compact">
-        <h1>Work</h1>
-        <p>Publications, experience, and applied projects in AI4Science.</p>
-        <nav class="work-subnav" aria-label="Work sections">
-            <a href="#publications" class="work-subnav-link">Publications</a>
-            <a href="#experience" class="work-subnav-link">Experience</a>
-            <a href="#projects" class="work-subnav-link">Projects</a>
-            <a href="#recognition" class="work-subnav-link">Recognition</a>
-        </nav>
-        <a href="index.html" class="back-home-link"><i class="fas fa-arrow-left"></i> Back to about</a>
     </header>
 
-    <main>
-        <section id="publications" class="section publications-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Research</span>
-                    <h2 class="section-title">Publications</h2>
-                    <p class="section-subtitle">Also on <a href="https://scholar.google.com/citations?user=0rwC4GQAAAAJ" target="_blank" class="inline-link">Google Scholar</a>.</p>
-                </div>
-                <div class="pub-list">
-                    <div class="pub-card pub-card-featured pub-card-has-thumb">
-                        <div class="pub-media">
-                            <img src="assets/images/multi-view.jpg" alt="Multimodal catalysis learning" class="pub-thumb">
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-venue">Nature Machine Intelligence · 2024</span>
-                            <h3>Multimodal Language and Graph Learning of Adsorption Configuration in Catalysis</h3>
-                            <p class="pub-authors">J. Ock, S. Badrinarayanan, R. Magar, A. Antony, A.B. Farimani</p>
-                            <p class="pub-desc">Generative LLM + contrastive transformer-GNN for adsorption energy prediction without crystal-structure data.</p>
-                            <div class="pub-links">
-                                <a href="https://doi.org/10.1038/s42256-024-00930-7" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
-                                <a href="https://github.com/hoon-ock/multi-view" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pub-card pub-card-has-thumb">
-                        <div class="pub-media">
-                            <img src="assets/images/multi-peptide.png" alt="Multi-Peptide model" class="pub-thumb">
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-venue">ACS JCIM · 2024</span>
-                            <h3>Multi-Peptide: Multimodality Leveraged Language-Graph Learning of Peptide Properties</h3>
-                            <p class="pub-authors">S. Badrinarayanan, C. Guntuboina, P. Mollaei, A.B. Farimani</p>
-                            <p class="pub-desc">Multimodal peptide-property predictor combining sequence transformers and AlphaFold-generated structures.</p>
-                            <div class="pub-links">
-                                <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.4c01443" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
-                                <a href="https://github.com/srivathsanb14/MultiPeptide" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pub-card pub-card-has-thumb">
-                        <div class="pub-media">
-                            <img src="assets/images/mofgpt.jpg" alt="MOFGPT generative MOF design" class="pub-thumb">
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-venue">ACS JCIM · 2025</span>
-                            <h3>MOFGPT: Generative Design of Metal-Organic Frameworks using Language Models</h3>
-                            <p class="pub-authors">S. Badrinarayanan, R. Magar, A. Antony, R.S. Meda, A.B. Farimani</p>
-                            <p class="pub-desc">PPO-driven generative transformers for de novo MOF sequence design and property-aware synthesis.</p>
-                            <div class="pub-links">
-                                <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.5c01625" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
-                                <a href="https://github.com/srivathsanb14/MOFGPT" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pub-card pub-card-has-thumb">
-                        <div class="pub-media">
-                            <img src="assets/images/process-agent.jpg" alt="LLM-guided chemical process optimization" class="pub-thumb">
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-venue">ML: Science &amp; Technology · 2025</span>
-                            <h3>LLM-guided Chemical Process Optimization with a Multi-Agent Approach</h3>
-                            <p class="pub-authors">T. Zeng, S. Badrinarayanan, J. Ock, C.K. Lai, A.B. Farimani</p>
-                            <p class="pub-desc">Multi-agent LLM framework for modular chemical process optimization tasks.</p>
-                            <div class="pub-links">
-                                <a href="https://iopscience.iop.org/article/10.1088/2632-2153/ae2382" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
-                                <a href="https://github.com/tongzeng24/ProcessAgent" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pub-card pub-card-has-thumb">
-                        <div class="pub-media">
-                            <img src="assets/images/agentd.jpg" alt="LLM agent for drug discovery" class="pub-thumb">
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-venue">ACS JCIM · 2026</span>
-                            <h3>Large Language Model Agent for Modular Task Execution in Drug Discovery</h3>
-                            <p class="pub-authors">J. Ock, R.S. Meda, S. Badrinarayanan, N.S. Aluru, A. Chandrasekhar, A.B. Farimani</p>
-                            <p class="pub-desc">Agentic pipeline integrating LLMs, RAG, and property-prediction models for autonomous drug discovery.</p>
-                            <div class="pub-links">
-                                <a href="https://doi.org/10.1021/acs.jcim.5c02454" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
-                                <a href="https://github.com/hoon-ock/AgentD" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <main class="wrap">
+        <h1 class="page-title">Research &amp; Experience</h1>
+        <p class="page-intro">Also see <a href="https://scholar.google.com/citations?user=0rwC4GQAAAAJ">Google Scholar</a>.</p>
+        <nav class="page-jump" aria-label="Sections">
+            <a href="#publications">Publications</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#honors">Honors and Service</a>
+        </nav>
 
-                <h3 class="research-subheading">Preprints</h3>
-                <div class="pub-list">
-                    <div class="pub-card pub-card-has-thumb">
-                        <div class="pub-media">
-                            <img src="assets/images/meta-learning.png" alt="Meta-learning for protein mutation prediction" class="pub-thumb">
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-venue">arXiv · 2025</span>
-                            <h3>Meta-Learning for Cross-Task Generalization in Protein Mutation Property Prediction</h3>
-                            <p class="pub-authors">S. Badrinarayanan, Y. Su, J. Ock, A. Pham, S. Ahuja, A.B. Farimani</p>
-                            <p class="pub-desc">Meta-learning framework enabling few-shot generalization across protein mutation prediction tasks.</p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2510.20943" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> arXiv</a>
-                            </div>
-                        </div>
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul class="pubs">
+                <li class="pub">
+                    <div class="pub-media"><img src="assets/images/multi-view.jpg" alt="Multimodal catalysis learning" class="pub-thumb" loading="lazy"></div>
+                    <div>
+                        <div class="pub-title">Multimodal Language and Graph Learning of Adsorption Configuration in Catalysis</div>
+                        <div class="pub-authors">J. Ock, <strong>S. Badrinarayanan</strong>, R. Magar, A. Antony, A.B. Farimani</div>
+                        <div><span class="pub-venue">Nature Machine Intelligence, 2024</span></div>
+                        <p class="pub-desc">A generative language model combined with a contrastive transformer-GNN predicts adsorption energy without crystal-structure data.</p>
+                        <div class="pub-links"><a href="https://doi.org/10.1038/s42256-024-00930-7">Paper</a> <a href="https://github.com/hoon-ock/multi-view">Code</a></div>
                     </div>
-                    <div class="pub-card pub-card-has-thumb">
-                        <div class="pub-media">
-                            <img src="assets/images/kirchhoff.png" alt="Graph-based Kirchhoff modeling of nanonecklace networks" class="pub-thumb">
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-venue">arXiv · 2026</span>
-                            <h3>Graph-Based Kirchhoff Modeling of Non-Ohmic Electron Transport in Self-Assembled Nanonecklace Networks</h3>
-                            <p class="pub-authors">O. Issakah, S. Badrinarayanan, R.F. Saraf, J. Ock</p>
-                            <p class="pub-desc">Graph-based modeling of electron transport in self-assembled nanonecklace networks.</p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2607.03698" target="_blank" class="project-link"><i class="fas fa-file-alt"></i> arXiv</a>
-                            </div>
-                        </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-media"><img src="assets/images/multi-peptide.png" alt="Multi-Peptide model" class="pub-thumb" loading="lazy"></div>
+                    <div>
+                        <div class="pub-title">Multi-Peptide: Multimodality Leveraged Language-Graph Learning of Peptide Properties</div>
+                        <div class="pub-authors"><strong>S. Badrinarayanan</strong>, C. Guntuboina, P. Mollaei, A.B. Farimani</div>
+                        <div><span class="pub-venue">J. Chem. Inf. Model., 2024</span></div>
+                        <p class="pub-desc">A multimodal peptide-property predictor combining sequence transformers with AlphaFold-generated structures.</p>
+                        <div class="pub-links"><a href="https://pubs.acs.org/doi/10.1021/acs.jcim.4c01443">Paper</a> <a href="https://github.com/srivathsanb14/MultiPeptide">Code</a></div>
                     </div>
-                </div>
-            </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-media"><img src="assets/images/mofgpt.jpg" alt="MOFGPT generative MOF design" class="pub-thumb" loading="lazy"></div>
+                    <div>
+                        <div class="pub-title">MOFGPT: Generative Design of Metal-Organic Frameworks using Language Models</div>
+                        <div class="pub-authors"><strong>S. Badrinarayanan</strong>, R. Magar, A. Antony, R.S. Meda, A.B. Farimani</div>
+                        <div><span class="pub-venue">J. Chem. Inf. Model., 2025</span></div>
+                        <p class="pub-desc">Reinforcement-learning-driven generative transformers for de novo MOF sequence design with property-aware synthesis.</p>
+                        <div class="pub-links"><a href="https://pubs.acs.org/doi/10.1021/acs.jcim.5c01625">Paper</a> <a href="https://github.com/srivathsanb14/MOFGPT">Code</a></div>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-media"><img src="assets/images/process-agent.jpg" alt="LLM-guided chemical process optimization" class="pub-thumb" loading="lazy"></div>
+                    <div>
+                        <div class="pub-title">LLM-guided Chemical Process Optimization with a Multi-Agent Approach</div>
+                        <div class="pub-authors">T. Zeng, <strong>S. Badrinarayanan</strong>, J. Ock, C.K. Lai, A.B. Farimani</div>
+                        <div><span class="pub-venue">Machine Learning: Science and Technology, 2025</span></div>
+                        <p class="pub-desc">A multi-agent LLM framework for modular chemical process optimization tasks.</p>
+                        <div class="pub-links"><a href="https://iopscience.iop.org/article/10.1088/2632-2153/ae2382">Paper</a> <a href="https://github.com/tongzeng24/ProcessAgent">Code</a></div>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-media"><img src="assets/images/agentd.jpg" alt="LLM agent for drug discovery" class="pub-thumb" loading="lazy"></div>
+                    <div>
+                        <div class="pub-title">Large Language Model Agent for Modular Task Execution in Drug Discovery</div>
+                        <div class="pub-authors">J. Ock, R.S. Meda, <strong>S. Badrinarayanan</strong>, N.S. Aluru, A. Chandrasekhar, A.B. Farimani</div>
+                        <div><span class="pub-venue">J. Chem. Inf. Model., 2026</span></div>
+                        <p class="pub-desc">An agentic pipeline integrating LLMs, retrieval-augmented generation, and property-prediction models for drug discovery.</p>
+                        <div class="pub-links"><a href="https://doi.org/10.1021/acs.jcim.5c02454">Paper</a> <a href="https://github.com/hoon-ock/AgentD">Code</a></div>
+                    </div>
+                </li>
+            </ul>
+            <h3 class="subhead">Preprints</h3>
+            <ul class="pubs">
+                <li class="pub">
+                    <div class="pub-media"><img src="assets/images/meta-learning.png" alt="Meta-learning for protein mutation prediction" class="pub-thumb" loading="lazy"></div>
+                    <div>
+                        <div class="pub-title">Meta-Learning for Cross-Task Generalization in Protein Mutation Property Prediction</div>
+                        <div class="pub-authors"><strong>S. Badrinarayanan</strong>, Y. Su, J. Ock, A. Pham, S. Ahuja, A.B. Farimani</div>
+                        <div><span class="pub-venue">arXiv:2510.20943, 2025</span></div>
+                        <p class="pub-desc">A meta-learning framework for few-shot generalization across protein mutation prediction tasks.</p>
+                        <div class="pub-links"><a href="https://arxiv.org/abs/2510.20943">arXiv</a></div>
+                    </div>
+                </li>
+                <li class="pub">
+                    <div class="pub-media"><img src="assets/images/kirchhoff.png" alt="Graph-based Kirchhoff modeling of nanonecklace networks" class="pub-thumb" loading="lazy"></div>
+                    <div>
+                        <div class="pub-title">Graph-Based Kirchhoff Modeling of Non-Ohmic Electron Transport in Self-Assembled Nanonecklace Networks</div>
+                        <div class="pub-authors">O. Issakah, <strong>S. Badrinarayanan</strong>, R.F. Saraf, J. Ock</div>
+                        <div><span class="pub-venue">arXiv:2607.03698, 2026</span></div>
+                        <p class="pub-desc">Graph-based modeling of electron transport in self-assembled nanonecklace networks.</p>
+                        <div class="pub-links"><a href="https://arxiv.org/abs/2607.03698">arXiv</a></div>
+                    </div>
+                </li>
+            </ul>
         </section>
 
-        <section id="experience" class="section experience-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Experience</span>
-                    <h2 class="section-title">Work history</h2>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"><i class="fas fa-rocket"></i></div>
-                        <div class="timeline-card">
-                            <span class="timeline-date">Nov 2025 to Jun 2026</span>
-                            <h3>Founding Engineer</h3>
-                            <div class="timeline-org">Stealth Startup · AI for Fintech · San Francisco Bay Area</div>
-                            <ul>
-                                <li>End-to-end ownership of ML, systems, and deployment for an AI-for-fintech product.</li>
-                                <li>Shipped through multiple 0→1 pivots across engineering, product, and go-to-market.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"><i class="fas fa-dna"></i></div>
-                        <div class="timeline-card">
-                            <span class="timeline-date">Jun to Aug 2025</span>
-                            <h3>Machine Learning Engineer</h3>
-                            <div class="timeline-org">Aikium Inc. · Protein Discovery · Berkeley, CA</div>
-                            <ul>
-                                <li>Multi-agent protein engineering pipelines integrating ESM, ProteinMPNN, AlphaFold, and RFdiffusion.</li>
-                                <li>Built a modular model zoo and LangChain interface connecting generative and predictive workflows for wet-lab scientists.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item timeline-item-featured">
-                        <div class="timeline-dot"><i class="fas fa-flask"></i></div>
-                        <div class="timeline-card">
-                            <span class="timeline-date">May 2024 to Jun 2025</span>
-                            <h3>Graduate Researcher</h3>
-                            <div class="timeline-org">MAIL Lab, Carnegie Mellon University · Advisor: Dr. Amir Barati Farimani</div>
-                            <ul>
-                                <li><strong>Multi-Peptide (JCIM 2024):</strong> Multimodal peptide-property predictor combining sequence and AlphaFold-generated structures.</li>
-                                <li><strong>Multimodal Catalysis (Nature MI 2024):</strong> Generative LLM + contrastive transformer-GNN for adsorption energy without crystal-structure data.</li>
-                                <li><strong>MOFGPT (JCIM 2025):</strong> RL-driven generative transformers for de novo MOF sequence design.</li>
-                                <li><strong>Drug Discovery Agent (JCIM 2026):</strong> Agentic pipelines with LLMs, RAG, and property-prediction models.</li>
-                                <li>Meta-learning preprint for cross-task protein mutation prediction.</li>
-                                <li>Mentored junior researchers; founded DreamPods, an LLM+TTS science communication initiative.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"><i class="fas fa-chart-line"></i></div>
-                        <div class="timeline-card">
-                            <span class="timeline-date">May to August 2022</span>
-                            <h3>MITACS Globalink Research Intern</h3>
-                            <div class="timeline-org">University of Alberta · Advisor: Dr. Zukui Li</div>
-                            <ul>
-                                <li>LSTM and Neural CDE surrogates for hydro-processing flow-rate optimization on real-time refinery data.</li>
-                                <li>Presented results at the Three-Minute Thesis symposium to 50+ faculty. <a href="https://www.youtube.com/watch?v=bidVGSq0R5o" target="_blank" class="inline-link">Watch talk</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"><i class="fas fa-microscope"></i></div>
-                        <div class="timeline-card">
-                            <span class="timeline-date">Jun 2021 to May 2022</span>
-                            <h3>Research Fellow</h3>
-                            <div class="timeline-org">IIT Madras · Young Research Fellowship · Advisor: Dr. Himanshu Goyal</div>
-                            <ul>
-                                <li>ML surrogates for stiff chemical kinetics, reducing CFD simulation time by 90% for reactor design.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"><i class="fas fa-eye"></i></div>
-                        <div class="timeline-card">
-                            <span class="timeline-date">Jun to Jul 2021</span>
-                            <h3>Machine Learning Intern</h3>
-                            <div class="timeline-org">Tirios AI · Chennai, India</div>
-                            <ul>
-                                <li>Deployed image recognition on AWS SageMaker for automated appliance diagnostics from user photos.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul class="entries">
+                <li>
+                    <div class="entry-head"><span class="entry-title">Founding Engineer</span><span class="entry-date">Nov 2025 &ndash; Jun 2026</span></div>
+                    <div class="entry-sub">Stealth startup, San Francisco Bay Area</div>
+                    <ul>
+                        <li>End-to-end ownership of machine learning, systems, and deployment for an AI-for-fintech product.</li>
+                        <li>Shipped through multiple 0-to-1 pivots across engineering, product, and go-to-market.</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="entry-head"><span class="entry-title">Machine Learning Engineer</span><span class="entry-date">Jun &ndash; Aug 2025</span></div>
+                    <div class="entry-sub">Aikium Inc., Berkeley, CA</div>
+                    <ul>
+                        <li>Built multi-agent protein engineering pipelines integrating ESM, ProteinMPNN, AlphaFold, and RFdiffusion.</li>
+                        <li>Developed a modular model zoo and LangChain interface connecting generative and predictive workflows for wet-lab scientists.</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="entry-head"><span class="entry-title">Graduate Researcher</span><span class="entry-date">May 2024 &ndash; Jun 2025</span></div>
+                    <div class="entry-sub">MAIL Lab, Carnegie Mellon University; advisor: Prof. Amir Barati Farimani</div>
+                    <ul>
+                        <li><strong>Multi-Peptide</strong> (JCIM 2024): multimodal peptide-property prediction from sequence and AlphaFold structures.</li>
+                        <li><strong>Multimodal catalysis</strong> (Nature Machine Intelligence 2024): adsorption energy prediction without crystal-structure data.</li>
+                        <li><strong>MOFGPT</strong> (JCIM 2025): reinforcement-learning-driven generative transformers for MOF design.</li>
+                        <li><strong>Drug discovery agent</strong> (JCIM 2026): agentic pipelines combining LLMs, RAG, and property predictors.</li>
+                        <li>Meta-learning preprint on cross-task protein mutation prediction.</li>
+                        <li>Mentored junior researchers.</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="entry-head"><span class="entry-title">MITACS Globalink Research Intern</span><span class="entry-date">May &ndash; Aug 2022</span></div>
+                    <div class="entry-sub">University of Alberta; advisor: Prof. Zukui Li</div>
+                    <ul>
+                        <li>LSTM and Neural CDE surrogate models for hydroprocessing flow-rate optimization on real-time refinery data.</li>
+                        <li>Presented at the Three-Minute Thesis symposium. <a href="https://www.youtube.com/watch?v=bidVGSq0R5o">Talk</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="entry-head"><span class="entry-title">Research Fellow, Young Research Fellowship</span><span class="entry-date">Jun 2021 &ndash; May 2022</span></div>
+                    <div class="entry-sub">IIT Madras; advisor: Prof. Himanshu Goyal</div>
+                    <ul>
+                        <li>Machine-learning surrogates for stiff chemical kinetics, reducing CFD simulation time by 90% for reactor design.</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="entry-head"><span class="entry-title">Machine Learning Intern</span><span class="entry-date">Jun &ndash; Jul 2021</span></div>
+                    <div class="entry-sub">Tirios AI, Chennai, India</div>
+                    <ul>
+                        <li>Deployed an image-recognition model on AWS SageMaker for automated appliance diagnostics.</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
-        <section id="projects" class="section projects-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Projects</span>
-                    <h2 class="section-title">Beyond the papers</h2>
-                    <p class="section-subtitle">Science communication, education tools, and applied research projects.</p>
-                </div>
-                <div class="projects-grid">
-                    <div class="project-card project-card-has-media">
-                        <div class="project-image-wrapper">
-                            <img src="assets/images/dreampods.jpg" alt="DreamPods science communication podcast" class="project-image" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>DreamPods</h3>
-                            <p>Founded an 11-person CMU team building LLM+TTS pipelines that turn scientific material into accessible audio.</p>
-                            <div class="project-footer">
-                                <a href="https://open.spotify.com/show/2Ky5djpjw6UFIcw5wxUS1S" target="_blank" class="project-link"><i class="fab fa-spotify"></i> Spotify</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card project-card-has-media">
-                        <div class="project-image-wrapper">
-                            <img src="assets/images/genai-education-platform.png" alt="GenAI education platform" class="project-image" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>GenAI Education Platform</h3>
-                            <p>PDF to lecture video pipeline using multimodal LLMs for automated STEM content creation.</p>
-                        </div>
-                    </div>
-                    <div class="project-card featured project-card-has-media">
-                        <div class="project-image-wrapper">
-                            <span class="project-badge">Best Poster</span>
-                            <img src="assets/images/genai-poster.png" alt="Character-consistent diffusion GenAI course poster" class="project-image" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>Character-Consistent Diffusion</h3>
-                            <p>CMU Generative AI course Best Poster. Coherent visual storylines via latent alignment in diffusion models.</p>
-                            <div class="project-footer">
-                                <a href="assets/docs/GenAI_Project_Poster.pdf" target="_blank" class="project-link"><i class="fas fa-file-pdf"></i> Poster</a>
-                                <a href="https://github.com/ArvindCar/Character-Consistent-Diffusion" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card project-card-has-media">
-                        <div class="project-image-wrapper">
-                            <img src="assets/images/refinery-mitacs.jpg" alt="MITACS refinery process optimization talk" class="project-image" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>Refinery Process Optimization</h3>
-                            <p>MITACS @ UAlberta. LSTM/Neural CDE surrogates with 97% accuracy on real-time plant data.</p>
-                            <div class="project-footer">
-                                <a href="https://www.youtube.com/watch?v=bidVGSq0R5o" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Talk</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul class="entries">
+                <li class="project"><span class="project-title">DreamPods.</span> Founded an 11-person CMU team building LLM and text-to-speech pipelines that turn scientific material into accessible audio. <span class="pub-links"><a href="https://open.spotify.com/show/2Ky5djpjw6UFIcw5wxUS1S">Spotify</a></span></li>
+                <li class="project"><span class="project-title">GenAI Education Platform.</span> A pipeline from PDF to lecture video using multimodal LLMs for automated STEM content creation.</li>
+                <li class="project"><span class="project-title">Character-Consistent Diffusion.</span> Best Poster, CMU Generative AI course. Coherent visual storylines via latent alignment in diffusion models. <span class="pub-links"><a href="assets/docs/GenAI_Project_Poster.pdf">Poster</a> <a href="https://github.com/ArvindCar/Character-Consistent-Diffusion">Code</a></span></li>
+                <li class="project"><span class="project-title">Refinery Process Optimization.</span> MITACS, University of Alberta. LSTM and Neural CDE surrogates reaching 97% accuracy on real-time plant data. <span class="pub-links"><a href="https://www.youtube.com/watch?v=bidVGSq0R5o">Talk</a></span></li>
+            </ul>
         </section>
 
-        <section id="recognition" class="section recognition-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Recognition</span>
-                    <h2 class="section-title">Awards &amp; service</h2>
-                </div>
-                <div class="recognition-grid">
-                    <div class="recognition-card recognition-card-service">
-                        <div class="recognition-card-header">
-                            <div class="recognition-card-icon"><i class="fas fa-check-double"></i></div>
-                            <span class="recognition-card-tag">Service</span>
-                        </div>
-                        <h3>ACS JCIM Peer Reviewer</h3>
-                        <p>Reviewing manuscripts on AI-driven molecular modeling and chemical informatics.</p>
-                        <span class="recognition-card-year">Oct 2025 to present</span>
-                    </div>
-                    <div class="recognition-card recognition-card-scholarship">
-                        <div class="recognition-card-header">
-                            <div class="recognition-card-icon"><i class="fas fa-award"></i></div>
-                            <span class="recognition-card-tag">Scholarship</span>
-                        </div>
-                        <h3>MITACS Globalink Scholar</h3>
-                        <p>International merit-based research scholarship at the University of Alberta.</p>
-                        <span class="recognition-card-year">2022</span>
-                    </div>
-                    <div class="recognition-card recognition-card-fellowship">
-                        <div class="recognition-card-header">
-                            <div class="recognition-card-icon"><i class="fas fa-flask"></i></div>
-                            <span class="recognition-card-tag">Fellowship</span>
-                        </div>
-                        <h3>Young Research Fellowship</h3>
-                        <p>Selected among top undergraduates at IIT Madras for early research.</p>
-                        <span class="recognition-card-year">Jul 2021</span>
-                    </div>
-                    <div class="recognition-card recognition-card-award">
-                        <div class="recognition-card-header">
-                            <div class="recognition-card-icon"><i class="fas fa-star"></i></div>
-                            <span class="recognition-card-tag">Award</span>
-                        </div>
-                        <h3>Best Poster Award</h3>
-                        <p>Character-Consistent Diffusion, CMU Generative AI course.</p>
-                        <span class="recognition-card-year">Nov 2024</span>
-                    </div>
-                </div>
-            </div>
+        <section id="honors">
+            <h2>Honors and Service</h2>
+            <ul class="entries">
+                <li><div class="entry-head"><span>Peer Reviewer, J. Chem. Inf. Model.</span><span class="entry-date">Oct 2025 &ndash; present</span></div></li>
+                <li><div class="entry-head"><span>Best Poster Award, CMU Generative AI course</span><span class="entry-date">Nov 2024</span></div></li>
+                <li><div class="entry-head"><span>MITACS Globalink Research Scholarship</span><span class="entry-date">2022</span></div></li>
+                <li><div class="entry-head"><span>Young Research Fellowship, IIT Madras</span><span class="entry-date">Jul 2021</span></div></li>
+            </ul>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Srivathsan Badrinarayanan</h3>
-                    <p>Incoming Ph.D. · CMU MAIL Lab</p>
-                </div>
-                <div class="footer-links">
-                    <a href="index.html">About</a>
-                    <a href="work.html">Work</a>
-                    <a href="blog.html">Blog</a>
-                </div>
-                <div class="footer-social">
-                    <a href="mailto:srivathsanb14@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/srivathsan-badrinarayanan" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/srivathsanb14" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://scholar.google.com/citations?hl=en&user=0rwC4GQAAAAJ" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                    <a href="https://orcid.org/0009-0004-6517-3145" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Srivathsan Badrinarayanan | Made with <i class="fas fa-heart"></i></p>
-            </div>
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>&copy; 2026 Srivathsan Badrinarayanan</p>
         </div>
     </footer>
-
-    <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <script src="assets/js/site.js"></script>
 </body>
 </html>
